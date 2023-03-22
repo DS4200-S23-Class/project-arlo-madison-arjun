@@ -3,47 +3,62 @@
 
 <head>
     <meta charset=utf-8/>
+    <title>NU Aero Budget Dash</title>
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src='js/d3.v6.1.1/d3.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.6/xlsx.full.min.js"></script>
-
-
-    <title> Aerospace Club Budget</title>
 </head>
 
 
 <body>
-
-    <h1> NU Aerospace Club Budget Tracking</h1>
+    <h1> Northeastern Aerospace Budgeting Dashboard</h1>
 
     <div>
-        <h2> Motivation: For our project, we decided to build a budgetting dashbaord to help the board of the NU Aerospace Club record and track their spending over a term. As Arlo and Arjun are students interested in finance and Madison has experience creating dashboards and serving on the board of a NU Club, we decided to combine our interests and experiences to improve the budgetting process at NU Aerospace Club. NU Aerospace Club is a Northeastern funded, student-run organization that gives students interested in engineering and aerospace the chance to design and build rockets and planes. Our dashboard aims to provide a multi-level view of all the expenditure done by the club. Our visualizations are intended to faciliatate budget exploration for e-board members and will enable them to compare budgets over time, spending across different teams, as well as, provide an overall view of their available budget. As student-run organization with limited funds, it is important for the club to be able to create a budget plan and monitor how they are tracking to it. 
-
-        </h2>
-        
+        <h2> Motivation </h2>
+        <p> 
+            For our project, we decided to build a budgeting dashbaord to help the student leaders within the NU Aerospace Club record and understand their spending over the semesters. 
+            The NU Aerospace Club is a Northeastern funded, student-run organization that gives students interested in engineering and aerospace the chance to design and build rockets and planes among other things.
+            As it is student-run, it is up to the club's e-board to decide how the provided money will be distributed throughout the club, which can be a daunting task.
+            Our dashboard aims to provide a multi-level view of expenditures within the club to allow budget exploration for e-board members and students proposing budgets for their respective teams. 
+            This will enable them to compare budgets over time, spending across different teams, as well as, examine an overall view of their available budget. 
+            As a student-run organization with limited funds, it is crucial for the club to be able to allocate those funds wisely and monitor their spendings. 
+            This tool will ideally provide the club leaders with the means to make easier and more educated decisions when splitting money across the various subdivisions of their club.  
+        </p>
     </div>
 
     <div>
-        <h2>Background</h2>
-        
-
-        Our <a href="data.xlsx"> data </a> is a manually compiled set of individual expenditure reports from different terms recorded by the members of the club themselves. It contains information regarding purchase costs, importance, and team. An evident bias was noticed in the "importance" data. As these are recorded and proposed by the individual teams who need the particular item, it is rare to see a "Not Necessary" recorded in the data. Additionally, as the club does not spend its entire budget, there may have been some transactions that were not recorded. After the data set was compiled, it was standardized manually to remove inconsistencies in spelling and capitalization. 
-
+        <h2> Data </h2>
+        <p> 
+            Our <a href="data.xlsx"> data </a> is a manually compiled set of individual expenditure reports from each semester over the past year, as recorded by the Aero Club's e-board. 
+            It contains information regarding both proposed semester budgets, as well as actual recorded costs per semester, detailing purchase costs, importance, and the team requesting the purchase. 
+            In addition, it contains some data about rocket parts damaged during launches, considered unexpected costs.
+            One evident bias to note within the data is the "importance" column. 
+            As this column is dictated by the individual who need the particular item, it is rare to see a "Not Necessary" recorded in the data, since the requester would typically consider their own request of a higher importance even if it is less so compared to those in other areas of the club. 
+            There were a few minor data qulaity issues present, like inconsistencies in spelling and capitalization. 
+            These were standardized within the sheet.
+            Additionally, the club reported only it's informal recorded purchases, which does not include every single purchase made within the semester. 
+            It includes mostly purchases which students made on behalf of the club which need to be reimbursed. 
+            Thus, the data on actual purchases provides more of a subset of the total purchases which we are assuming to be generally representative of all purchases made. 
+        </p>
     </div>
 
     <div>
-        <h2>Visualization</h2>
-        TODO: Build your visualization tool here 
+        <h2> Visualization </h2>
         <div class= "vis1"> </div>
          
     </div>
 
     <div>
-        <h2>Acknowledgements</h2>
-        TODO: Cite resources used here   
+        <h2> Acknowledgements </h2>
+        <div>
+            <ul>
+               <li> <a href=https://www.educative.io/answers/how-to-create-stacked-bar-chart-using-d3>How to Create a Stacked Barchart</a></li>
+               <li> <a href=https://observablehq.com/@d3/d3-sum>D3.sum</a></li>
+           </ul>
     </div>
 
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
