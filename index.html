@@ -51,8 +51,24 @@
 
     <div>
         <h2> Visualization </h2>
+        Note for pm-03: Redshift must be checked for completed vis to show (part of intended functionality)
+        <h3> NU Aerospace Budget exploration </h3>
+
+        <form>
+            Dashboard-Wide Filters:
+            <input type="radio" id="RedshiftFilter" name="group" value="Redshift">
+            <label for="Redshift">Redshift</label>
+            <input type="radio" id="FixedWingFilter" name="group" value="Fixed Wing">
+            <label for="Fixed Wing">Fixed Wing</label>
+            <input type="radio" id="AllFilter" name="group" value="All">
+            <label for="All">All</label>
+          </form>
+
         <div class= "vis1"> </div>
-         
+        <div class="container">
+            <div class="subgroupVis"></div>
+            <div class= "launchVis hidden" id="launchVis"> </div>
+          </div>
     </div>
 
     <div>
@@ -60,7 +76,8 @@
         <div>
             <ul>
                <li> <a href=https://www.educative.io/answers/how-to-create-stacked-bar-chart-using-d3>How to Create a Stacked Barchart</a></li>
-               <li> <a href=https://observablehq.com/@d3/d3-sum>D3.sum</a></li>
+               <li> <a href=https://stackoverflow.com/questions/58606047/how-to-use-on-addeventlistener-on-radio-button-in-plain-javascript>Event Listeners for Radio Buttons</a></li>
+               <li> <a href=https://www.d3indepth.com/zoom-and-pan/>Zooming and Panning</li>
            </ul>
     </div>
 
