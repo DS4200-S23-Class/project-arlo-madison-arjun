@@ -1,34 +1,23 @@
-﻿Item,Launch Date
-blast caps,12/19/2021
-cesaroni k1440 motor,12/19/2021
-fcb antennas,4/2/2022
-blast caps,4/2/2022
-shock cord,4/23/2022
-5lb high accuracy load cell,4/23/2022
-blast caps,4/23/2022
-gps,9/17/2022
-easy minis,9/17/2022
-blast caps,9/17/2022
-"blast caps, 3s lipos, airspeed sensor daq",10/15/2022
-shock cord,1/20/2023
-gps,1/20/2023
-blast caps,1/20/2023
-cnc components,2/18/2023
-internal marmon clamp,2/18/2023
-pressure transducers,2/18/2023
-blast caps,2/18/2023
-lead screw nut,11/19/2022
-uhmwpe cord,11/19/2022
-nichrome wire,11/19/2022
-quarter inch 20 x 6 steel threaded rod,11/19/2022
-quarter inch 20 x 6 steel threaded rod,11/19/2022
-quarter inch 20 x 6 steel threaded rod,11/19/2022
-acryllic transition section,11/19/2022
-go pro fusion 360 degree action camera,11/19/2022
-cube camera,11/19/2022
-cube camera,11/19/2022
-nose cone tip,11/19/2022
-spring steel bands,11/19/2022
-fiberglass tubes,11/19/2022
-marmon flanges,11/19/2022
-blast caps,11/19/2022
+﻿Item,Launch Date,Cost,Number Broken
+cesaroni k1440 motor,12/19/2021,237.84,1
+fcb antennas,4/2/2022,39.4,1
+shock cord,4/23/2022,9.55,1
+5lb high accuracy load cell,4/23/2022,933.38,1
+gps,9/17/2022,254.43,1
+easy minis,9/17/2022,101.78,1
+3s lipos,10/15/2022,29.99,1
+airspeed sensor daq,10/15/2022,86.9,1
+gps,1/20/2023,254.43,1
+shock cord,1/20/2023,9.55,1
+internal marmon clamp,2/18/2023,40.98,1
+pressure transducers,2/18/2023,32.99,1
+lead screw nut,11/19/2022,29.4,1
+uhmwpe cord,11/19/2022,12.95,1
+nichrome wire,11/19/2022,9.89,1
+quarter inch 20 x 6 steel threaded rod,11/19/2022,25.74,3
+acryllic transition section,11/19/2022,8.58,1
+go pro fusion 360 degree action camera,11/19/2022,699,1
+cube camera,11/19/2022,37.98,2
+nose cone tip,11/19/2022,20.7,1
+fiberglass tubes,11/19/2022,15.3,1
+marmon flanges,11/19/2022,39.95,1
