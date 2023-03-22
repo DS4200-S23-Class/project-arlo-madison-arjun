@@ -2,48 +2,55 @@
 const FRAME_HEIGHT = 400;
 const FRAME_WIDTH = 400;
 const MARGINS = {left: 40, right: 25, top: 25, bottom: 25};
-
 const VIS_HEIGHT = FRAME_HEIGHT - MARGINS.top - MARGINS.bottom;
 const VIS_WIDTH = FRAME_WIDTH - MARGINS.left - MARGINS.right;
 
 // store data in variables
 const launch_data = d3.csv("Data/launch.csv");
-
 const recorded_data = d3.csv("Data/recorded.csv");
-
 const proposed_data = d3.csv("Data/proposed.csv");
 
 // print data to the console
-launch_data.then((data) => {
-  console.log(data)
-});
+// launch_data.then((data) => {
+//   console.log(data)
+// });
 
-// create first frame
-const FRAME1 = d3.select('.vis1')
-				.append('svg')
-					.attr('height', FRAME_HEIGHT)
-					.attr('width', FRAME_HEIGHT)
-					.attr('class', 'frame')
-					.attr('id', 'FRAME1')
-          .attr("viewBox", [MARGINS.left, MARGINS.bottom, VIS_WIDTH, VIS_HEIGHT]);
 
 recorded_data.then((data) => {
+
+  console.log(data)
+
+
+  // create first frame
+const FRAME1 = d3.select('.vis1')
+                .append('svg')
+                .attr('height', FRAME_HEIGHT)
+                .attr('width', FRAME_HEIGHT)
+                .attr('class', 'frame')
+                .attr('id', 'FRAME1')
+                .attr("viewBox", [MARGINS.left, MARGINS.bottom, VIS_WIDTH, VIS_HEIGHT]);
+
+
   // set max values for scaling
   let MAX_Y = 0
   for (let i = 0; i < data.length; i++) {
     let cost = parseFloat(data[i].Cost)
     if ( isNaN(cost) == false ) { 
       MAX_Y += cost 
-  }}
+  }};
 
   // create scaling functions
   let xscale = d3.scaleBand()
-		.domain(data.map((d) =>
+    .domain(data.map((d) =>
       {return d.Group;}))
 		.range([0, VIS_WIDTH])
 		.padding(0.4);
+    // .domain(d3.range(0,recorded_data.length))
+        
+
+        
   let yscale = d3.scaleLinear()
-    .domain([(MAX_Y + 300), 0])
+    .domain([0, (MAX_Y + 300)])
     .range([0, VIS_HEIGHT]);
 
   // create x and y axes
@@ -83,7 +90,7 @@ recorded_data.then((data) => {
       .attr("x", function(d) { return xscale(d.x); })
       .attr("y", function(d) { return yscale(d.y0 + d.y); })
       .attr("height", function(d) { return yscale(d.y0) - yscale(d.y0 + d.y); })
-      .attr("width", xscale.rangeBand());
+      .attr("width", xscale.bandwidth());
 
   FRAME1.append('text')
   .attr('transform', 'translate(' + MARGINS.left + ')')
@@ -95,12 +102,13 @@ recorded_data.then((data) => {
 
  
   
-  FRAME1.call(d3.zoom()
-        .extent([[0, 0], [width, height]])
-        .scaleExtent([1, 8])
-        .on("zoom", zoomed));
+  // FRAME1.call(d3.zoom()
+  //       .extent([[0, 0], [width, height]])
+  //       .scaleExtent([1, 8])
+  //       .on("zoom", zoomed));
   
-  function zoomed({transform}) {
-      g.attr("transform", transform);
-  }
+  // function zoomed({transform}) {
+  //     g.attr("transform", transform);
+  // }
+
 });
