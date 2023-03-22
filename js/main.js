@@ -24,17 +24,17 @@ const FRAME1 = d3.select('.vis1')
 					.attr('height', FRAME_HEIGHT)
 					.attr('width', FRAME_HEIGHT)
 					.attr('class', 'frame')
-					.attr('id', 'FRAME1');
+					.attr('id', 'FRAME1')
+          .attr("viewBox", [MARGINS.left, MARGINS.bottom, VIS_WIDTH, VIS_HEIGHT]);
 
 recorded_data.then((data) => {
-
   // set max values for scaling
   let MAX_Y = 0
-  data.forEach((d) => {
-    print(d)
-    MAX_Y = parseInt(MAX_Y, d.Cost)
-  });
-  console.log(MAX_Y)
+  for (let i = 0; i < data.length; i++) {
+    let cost = parseFloat(data[i].Cost)
+    if ( isNaN(cost) == false ) { 
+      MAX_Y += cost 
+  }}
 
   // create scaling functions
   let xscale = d3.scaleBand()
@@ -43,7 +43,7 @@ recorded_data.then((data) => {
 		.range([0, VIS_WIDTH])
 		.padding(0.4);
   let yscale = d3.scaleLinear()
-    .domain([(MAX_Y + 50), 0])
+    .domain([(MAX_Y + 300), 0])
     .range([0, VIS_HEIGHT]);
 
   // create x and y axes
@@ -58,29 +58,32 @@ recorded_data.then((data) => {
     .attr('font-size', '10px');
 
   // get subgroup heights
-  let subgroups = ['Airframe', 'Avionics', 'Internal Mech', 'Propulsion', 'Starship']
-  let subgroup_totals = {'Airframe': 0, 'Avionics': 0, 'Internal Mech': 0, 'Propulsion': 0, 'Starship': 0}
-
-  for (var i = 0; i < subgroups.length; i++) {
-    let curr_subgroup = subgroup_totals[i];
-    Object.keys(subgroup_totals).forEach((item) => {
-      if(item == curr_subgroup) {
-          subgroup_totals[item] += (d) => d.Cost
-      }})
-  };
-  console.log(subgroup_totals)
-
-
+  let colors = ['gold', 'green', 'slate blue', 'orange', 'blue'];
+  let subgroup_totals = {'Airframe': 0, 'Avionics': 0, 'Internal Mech': 0, 'Propulsion': 0, 'Starship': 0};
   
-  // append all bars to chart 
-	FRAME1.selectAll("bar")
-    .data(data)
-    .enter().append("rect")
-    .attr("class", color)
-    .attr("x", (d) => {return xscale(d.Group) + MARGINS.left;})
-    .attr("y", (d) => {return yscale(d.Cost)})
-    .attr("width", xscale.bandwidth())
-    .attr("height", (d) => {return VIS_HEIGHT});
+  for (let i = 0; i < data.length; i++) {
+    let cost = parseFloat(data[i].Cost)
+    let subgroup = data[i].Subgroup
+    if ( isNaN(cost) == false ) { 
+      subgroup_totals[subgroup] += cost 
+  }};
+
+  // does not work here down
+
+  let groups = FRAME1.selectAll("g.bars")
+      .data(subgroup_totals)
+      .enter().append("g")
+      .attr("class", "bars")
+      .style("fill", function(d, i) { return colors[i]; });
+    
+  let rect = groups.selectAll("rect")
+      .data(function(d) { return d; })
+      .enter()
+      .append("rect")
+      .attr("x", function(d) { return xscale(d.x); })
+      .attr("y", function(d) { return yscale(d.y0 + d.y); })
+      .attr("height", function(d) { return yscale(d.y0) - yscale(d.y0 + d.y); })
+      .attr("width", xscale.rangeBand());
 
   FRAME1.append('text')
   .attr('transform', 'translate(' + MARGINS.left + ')')
@@ -89,4 +92,15 @@ recorded_data.then((data) => {
   .attr('text-anchor', 'middle')
   .attr('class', 'header')
   .text('Overview of Spending');
+
+ 
+  
+  FRAME1.call(d3.zoom()
+        .extent([[0, 0], [width, height]])
+        .scaleExtent([1, 8])
+        .on("zoom", zoomed));
+  
+  function zoomed({transform}) {
+      g.attr("transform", transform);
+  }
 });
