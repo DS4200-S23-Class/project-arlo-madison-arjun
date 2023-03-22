@@ -1,66 +1,66 @@
 ﻿Item,Price,Quantity,Cost,Subgroup,Group,Semester
-E-matches,$72.36,1,$72.36,Internal Mech,Redshift,Spring 2023
-Amazon fiberglass/bean things,$52.75,1,$52.75,Avionics,Redshift,Spring 2023
-Zipcar for January Launch,$355.82,1,$355.82,Travel,Redshift,Spring 2023
-OORR fiberglass and hardware and runcams,$401.97,1,$401.97,Internal Mech,Redshift,Spring 2023
-OORR tubes,$679.99,1,$679.99,Internal Mech,Redshift,Spring 2023
-Starship (lathe face plate and connectors),$68.49,1,$68.49,Starship,Redshift,Spring 2023
-Starship (aluminium tube),$146.14,1,$146.14,Starship,Redshift,Spring 2023
-Adafruit electronics for emerging airframe flight controller,$145.15,1,$145.15,Airframe,Redshift,Spring 2023
-CO2 suppression system test,$165.36,1,$165.36,Propulsion,Redshift,Spring 2023
-Acetic Acid,$40.55,1,$40.55,Propulsion,Redshift,Spring 2023
-12 Port Manifold,$160.66,1,$160.66,Propulsion,Redshift,Spring 2023
-4s lipo for Propulsionortional valve,$54.18,1,$54.18,Propulsion,Redshift,Spring 2023
-Stainless Steel for Load Cell Carriage,$48.96,1,$48.96,Propulsion,Redshift,Spring 2023
-Multipurpose 304 Stainless Steel Sheet,$51.40,1,$51.40,Propulsion,Redshift,Spring 2023
-Zipcar expenses (february launch),$530.75,1,$530.75,Travel,Redshift,Spring 2023
-ASI supplies,$118.22,1,$118.22,Propulsion,Redshift,Spring 2023
-Steel sheet for engine blast enclosure,$222.36,1,$222.36,Propulsion,Redshift,Spring 2023
-Gas and food for st albans launch,$152.36,1,$152.36,Starship,Redshift,Spring 2023
-DPF Groundstation PCBs,$47.80,1,$47.80,Avionics,Redshift,Spring 2023
-Gas for drive to St. Albans Vermont,$99.45,1,$99.45,Travel,Redshift,Spring 2023
-Binding Screws(Starship),$53.53,1,$53.53,Starship,Redshift,Spring 2023
-Globe Valve for Propulsion Valve,$124.72,1,$124.72,Propulsion,Redshift,Spring 2023
-Propulsionortional Valve Hardware,$41.99,1,$41.99,Propulsion,Redshift,Spring 2023
-Febuary launch dinner for my car,$44.20,1,$44.20,Travel,Redshift,Spring 2023
-MK1 Flange,$250.00,1,$250.00,Airframe,Redshift,Spring 2023
-McMaster airframe,$164.75,1,$164.75,Airframe,Redshift,Spring 2023
-More McMaster airframe,$90.16,1,$90.16,Airframe,Redshift,Spring 2023
-Even More McMaster airframe,$115.77,1,$115.77,Airframe,Redshift,Spring 2023
-So much More McMaster airframe,$175.80,1,$175.80,Airframe,Redshift,Spring 2023
-McMASTERRRRR!!! Freeze pops,$13.73,1,$13.73,Airframe,Redshift,Spring 2023
-FCB V2 digikey+mouser,"$1,463.32",1,########,Avionics,Redshift,Spring 2023
-solenoid pcbs,$77.66,1,$77.66,Avionics,Redshift,Spring 2023
-JLC for Propulsion ADC board + Digikey for Propulsion board + Amazon,$669.97,1,$669.97,Avionics,Redshift,Fall 2022
-JLC + DIgikey for Propulsion power board,$201.12,1,$201.12,Avionics,Redshift,Fall 2022
-Wildman motors,$591.92,1,$591.92,Airframe,Redshift,Fall 2022
-Wire and glue,$69.32,1,$69.32,Avionics,Redshift,Fall 2022
-Amazon batteries bean + Propulsion digikey psus,139.32,1,$139.32,Avionics,Redshift,Fall 2022
-Swarm + 6s lipo + screw switches,$214.25,1,$214.25,Avionics,Redshift,Fall 2022
-JLC for Starship,$126.26,1,$126.26,Starship,Redshift,Fall 2022
-Hex encoder for Propulsion,$66.92,1,$66.92,Propulsion,Redshift,Fall 2022
-Digikey for Starship,$101.57,1,$101.57,Starship,Redshift,Fall 2022
-TRD and Marman clamp parts,$397.23,1,$397.23,Internal Mech,Redshift,Fall 2022
-bearings,$155.83,1,$155.83,Internal Mech,Redshift,Fall 2022
-TRD parts,$154.88,1,$154.88,Internal Mech,Redshift,Fall 2022
-Random Internal Mech Stuff,$557.81,1,$557.81,Internal Mech,Redshift,Fall 2022
-Digikey terminal blocks,$21.67,1,$21.67,Avionics,Redshift,Fall 2022
-Mark 1 motor,$403.27,1,$403.27,Airframe,Redshift,Fall 2022
-Propulsion PCBs (Digikey+JLC+Amazon),$156.06,1,$156.06,Avionics,Redshift,Summer II 2022
-Propulsion digikey isolated psu and optocoupler,$19.18,1,$19.18,Avionics,Redshift,Summer II 2022
-"Propulsion MAX31855s, isolated psu",$33.78,1,$33.78,Avionics,Redshift,Summer II 2022
-Propulsion backup parts,$66.65,1,$66.65,Propulsion,Redshift,Summer II 2022
-Assorted Marman Clamp Parts,$324.92,1,$324.92,Internal Mech,Redshift,Summer II 2022
-Cinderblocks,$120.00,1,$120.00,Propulsion,Redshift,Summer II 2022
-Propulsion board electronic ICs,$236.22,1,$236.22,Avionics,Redshift,Summer I 2022
-Aluminum and plastic tubing,$150.54,1,$150.54,Airframe,Redshift,Summer I 2022
-General tools and supplies (Propulsion testing),$133.78,1,$133.78,Propulsion,Redshift,Summer I 2022
-Hacky daq stuff,$70.93,1,$70.93,Avionics,Redshift,Summer I 2022
-McMaster fittings and stock,$201.90,1,$201.90,Propulsion,Redshift,Summer I 2022
-Uhaul,$225.61,1,$225.61,Propulsion,Redshift,Summer I 2022
-Seco seals,$202.50,1,$202.50,Propulsion,Redshift,Summer I 2022
-Aliexpress elecetronics memes,$360.26,1,$360.26,Avionics,Redshift,Summer I 2022
-Marman clamp extra small / light weight 4 axis parts,$713,1,$713,Internal Mech,Redshift,Summer I 2022
-"McMaster stock, end mills, and fittings and stuff stuff for the vacuum pump",$248.64,1,$248.64,Internal Mech,Redshift,Summer I 2022
-General tools and supplies (Propulsion testing),$111.17,1,$111.17,Propulsion,Redshift,Summer I 2022
-Ungrounded TC probe,$58.30,1,$58.30,Propulsion,Redshift,Summer I 2022
+E-matches,72.36,1,72.36,Internal Mech,Redshift,Spring 2023
+Amazon fiberglass/bean things,52.75,1,52.75,Avionics,Redshift,Spring 2023
+Zipcar for January Launch,355.82,1,355.82,Travel,Redshift,Spring 2023
+OORR fiberglass and hardware and runcams,401.97,1,401.97,Internal Mech,Redshift,Spring 2023
+OORR tubes,679.99,1,679.99,Internal Mech,Redshift,Spring 2023
+Starship (lathe face plate and connectors),68.49,1,68.49,Starship,Redshift,Spring 2023
+Starship (aluminium tube),146.14,1,146.14,Starship,Redshift,Spring 2023
+Adafruit electronics for emerging airframe flight controller,145.15,1,145.15,Airframe,Redshift,Spring 2023
+CO2 suppression system test,165.36,1,165.36,Propulsion,Redshift,Spring 2023
+Acetic Acid,40.55,1,40.55,Propulsion,Redshift,Spring 2023
+12 Port Manifold,160.66,1,160.66,Propulsion,Redshift,Spring 2023
+4s lipo for Propulsionortional valve,54.18,1,54.18,Propulsion,Redshift,Spring 2023
+Stainless Steel for Load Cell Carriage,48.96,1,48.96,Propulsion,Redshift,Spring 2023
+Multipurpose 304 Stainless Steel Sheet,51.40,1,51.40,Propulsion,Redshift,Spring 2023
+Zipcar expenses (february launch),530.75,1,530.75,Travel,Redshift,Spring 2023
+ASI supplies,118.22,1,118.22,Propulsion,Redshift,Spring 2023
+Steel sheet for engine blast enclosure,222.36,1,222.36,Propulsion,Redshift,Spring 2023
+Gas and food for st albans launch,152.36,1,152.36,Starship,Redshift,Spring 2023
+DPF Groundstation PCBs,47.80,1,47.80,Avionics,Redshift,Spring 2023
+Gas for drive to St. Albans Vermont,99.45,1,99.45,Travel,Redshift,Spring 2023
+Binding Screws(Starship),53.53,1,53.53,Starship,Redshift,Spring 2023
+Globe Valve for Propulsion Valve,124.72,1,124.72,Propulsion,Redshift,Spring 2023
+Propulsionortional Valve Hardware,41.99,1,41.99,Propulsion,Redshift,Spring 2023
+Febuary launch dinner for my car,44.20,1,44.20,Travel,Redshift,Spring 2023
+MK1 Flange,250.00,1,250.00,Airframe,Redshift,Spring 2023
+McMaster airframe,164.75,1,164.75,Airframe,Redshift,Spring 2023
+More McMaster airframe,90.16,1,90.16,Airframe,Redshift,Spring 2023
+Even More McMaster airframe,115.77,1,115.77,Airframe,Redshift,Spring 2023
+So much More McMaster airframe,175.80,1,175.80,Airframe,Redshift,Spring 2023
+McMASTERRRRR!!! Freeze pops,13.73,1,13.73,Airframe,Redshift,Spring 2023
+FCB V2 digikey+mouser,1463.32,1,########,Avionics,Redshift,Spring 2023
+solenoid pcbs,77.66,1,77.66,Avionics,Redshift,Spring 2023
+JLC for Propulsion ADC board + Digikey for Propulsion board + Amazon,669.97,1,669.97,Avionics,Redshift,Fall 2022
+JLC + DIgikey for Propulsion power board,201.12,1,201.12,Avionics,Redshift,Fall 2022
+Wildman motors,591.92,1,591.92,Airframe,Redshift,Fall 2022
+Wire and glue,69.32,1,69.32,Avionics,Redshift,Fall 2022
+Amazon batteries bean + Propulsion digikey psus,139.32,1,139.32,Avionics,Redshift,Fall 2022
+Swarm + 6s lipo + screw switches,214.25,1,214.25,Avionics,Redshift,Fall 2022
+JLC for Starship,126.26,1,126.26,Starship,Redshift,Fall 2022
+Hex encoder for Propulsion,66.92,1,66.92,Propulsion,Redshift,Fall 2022
+Digikey for Starship,101.57,1,101.57,Starship,Redshift,Fall 2022
+TRD and Marman clamp parts,397.23,1,397.23,Internal Mech,Redshift,Fall 2022
+bearings,155.83,1,155.83,Internal Mech,Redshift,Fall 2022
+TRD parts,154.88,1,154.88,Internal Mech,Redshift,Fall 2022
+Random Internal Mech Stuff,557.81,1,557.81,Internal Mech,Redshift,Fall 2022
+Digikey terminal blocks,21.67,1,21.67,Avionics,Redshift,Fall 2022
+Mark 1 motor,403.27,1,403.27,Airframe,Redshift,Fall 2022
+Propulsion PCBs (Digikey+JLC+Amazon),156.06,1,156.06,Avionics,Redshift,Summer II 2022
+Propulsion digikey isolated psu and optocoupler,19.18,1,19.18,Avionics,Redshift,Summer II 2022
+"Propulsion MAX31855s, isolated psu",33.78,1,33.78,Avionics,Redshift,Summer II 2022
+Propulsion backup parts,66.65,1,66.65,Propulsion,Redshift,Summer II 2022
+Assorted Marman Clamp Parts,324.92,1,324.92,Internal Mech,Redshift,Summer II 2022
+Cinderblocks,120.00,1,120.00,Propulsion,Redshift,Summer II 2022
+Propulsion board electronic ICs,236.22,1,236.22,Avionics,Redshift,Summer I 2022
+Aluminum and plastic tubing,150.54,1,150.54,Airframe,Redshift,Summer I 2022
+General tools and supplies (Propulsion testing),133.78,1,133.78,Propulsion,Redshift,Summer I 2022
+Hacky daq stuff,70.93,1,70.93,Avionics,Redshift,Summer I 2022
+McMaster fittings and stock,201.90,1,201.90,Propulsion,Redshift,Summer I 2022
+Uhaul,225.61,1,225.61,Propulsion,Redshift,Summer I 2022
+Seco seals,202.50,1,202.50,Propulsion,Redshift,Summer I 2022
+Aliexpress elecetronics memes,360.26,1,360.26,Avionics,Redshift,Summer I 2022
+Marman clamp extra small / light weight 4 axis parts,713.00,1,713.00,Internal Mech,Redshift,Summer I 2022
+"McMaster stock, end mills, and fittings and stuff stuff for the vacuum pump",248.64,1,248.64,Internal Mech,Redshift,Summer I 2022
+General tools and supplies (Propulsion testing),111.17,1,111.17,Propulsion,Redshift,Summer I 2022
+Ungrounded TC probe,58.30,1,58.30,Propulsion,Redshift,Summer I 2022

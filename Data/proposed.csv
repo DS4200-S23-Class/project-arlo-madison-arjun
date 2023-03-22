@@ -1,200 +1,200 @@
 ﻿Column1,Description,Importance,Vendor,Price,Quantity,Cost,Subgroup,Group,Semester
-UHMWPE CORD,0.8 mm,Pretty Important,AMAZON,$12.95,3,$38.85,Internal Mech,Redshift,Spring 2023
-UHMWPE CORD,0.8 mm,Pretty Important,AMAZON,$12.95,3,$38.85,Internal Mech,Redshift,Fall 2022
-MA OUTPUT DUCERS,0-1000 psi 4-20mA ducers,Necessary for Any Progress,GRAINGER,$469.35,2,$938.70,Propulsion,Redshift,Spring 2023
-MA OUTPUT DUCERS,0-1000 psi 4-20mA ducers,Necessary for Any Progress,GRAINGER,$469.35,2,$938.70,Propulsion,Redshift,Fall 2022
--06 K-SEAL,-06 PTFE k-seal for kero outlet,Necessary for Any Progress,TECHNETICS,$63.00,1,$63.00,Propulsion,Redshift,Spring 2023
--06 K-SEAL,-06 PTFE k-seal for kero outlet,Necessary for Any Progress,TECHNETICS,$63.00,1,$63.00,Propulsion,Redshift,Fall 2022
--08 K-SEAL,-08 k-seal for kero inlet and lox inlet,Necessary for Any Progress,TECHNETICS,$63.00,2,$126.00,Propulsion,Redshift,Spring 2023
--08 K-SEAL,-08 k-seal for kero inlet and lox inlet,Necessary for Any Progress,TECHNETICS,$63.00,2,$126.00,Propulsion,Redshift,Fall 2022
-ALUMINUM TUBE,"1/2"" x 1'",Pretty Important,,10.01,3,$30.03,Internal Mech,Redshift,Spring 2023
-BOLTS FOR LOAD CELL,"1/2""-20 Thread Size, 1-7/8"" Long",Necessary for Any Progress,MCMASTER,$4.29,1,$4.29,Propulsion,Redshift,Summer II 2022
-LEAD SCREW NUT,1/4-12 4-start cylindrical,Pretty Important,MCMASTER,$45.38,2,$90.76,Internal Mech,Redshift,Spring 2023
-LEAD SCREW NUT,1/4-12 4-start threaded,Pretty Important,MCMASTER,$77.73,2,$155.46,Internal Mech,Redshift,Spring 2023
-LEAD SCREW NUT,1/4-12 4-start threaded,Pretty Important,MCMASTER,$77.73,3,$233.19,Internal Mech,Redshift,Fall 2022
-THREADED ROD,1/4-20 x 6',Pretty Important,MCMASTER,7.87,2,$15.74,Internal Mech,Redshift,Spring 2023
-UNGROUNDED TC PROBES,"1/8"" miniplug probes",Pretty Important,GRAINGER,$34.90,2,$69.80,Propulsion,Redshift,Spring 2023
-UNGROUNDED TC PROBES,"1/8"" miniplug probes",Necessary for Any Progress,GRAINGER,$34.90,2,$69.80,Propulsion,Redshift,Fall 2022
-BURST DISKS,1000 psi 304ss tapered seal rupture discs,Pretty Important,HIGH PRESSURE EQUIPMENT,$50.00,2,$100.00,Propulsion,Redshift,Summer II 2022
-FIBERGLASS SHEET,"12"" x 12"" x 1/4"", G10",Necessary for Any Progress,MCMASTER,35.95,4,$143.80,Internal Mech,Redshift,Spring 2023
-FIBERGLASS SHEET,"12"" x 12"" x 1/8"" G10",Necessary for Any Progress,MCMASTER,24.35,4,$97.40,Internal Mech,Redshift,Spring 2023
-ACRYLIC TUBE,"12"" x 6""",Pretty Important,MCMASTER,106.77,1,$106.77,Internal Mech,Redshift,Spring 2023
-CARBON FIBER SHEET (STARSHIP),"12""x12""",Pretty Important,MCMASTER,130,1,$130.00,Starship,Redshift,Spring 2023
-FIBERGLASS SHEET (STARSHIP),"12""x12""x1/4,G10",Pretty Important,MCMASTER,35.95,1,$35.95,Starship,Redshift,Spring 2023
-CAMERA,130º view,Pretty Important,RASPBERRY PI,60,3,$180.00,Internal Mech,Redshift,Spring 2023
-SPI PRESSURE TRANSDUCER,15 psia,Pretty Important,DIGIKEY,$66.28,1,$66.28,Sims,Redshift,Summer II 2022
-KEROSENE,1-K 9.33/gal. 2.5 gallon jug,Necessary for Any Progress,WALMART,$23.32,4,$93.28,Propulsion,Redshift,Summer II 2022
-2 STAGE MOTORS,2 38mm rocket motors,Necessary for Any Progress,WILDMAN,300,1,$300.00,Airframe,Redshift,Spring 2023
-6061-T6 STOCK,"2""x3""x6""",Necessary for Any Progress,MCMASTER,$56.31,3,$168.93,Internal Mech,Redshift,Summer II 2022
-NICHROME WIRE,28 awg,Pretty Important,AMAZON,$7.99,3,$23.97,Internal Mech,Redshift,Spring 2023
-NICHROME WIRE,28 awg,Pretty Important,AMAZON,$7.99,3,$23.97,Internal Mech,Redshift,Fall 2022
-SPILL ABSORBENT,3.43 lb bags of kero cleanup,Necessary for Any Progress,AMAZON,$16.99,2,$33.98,Propulsion,Redshift,Summer II 2022
-SPI PRESSURE TRANSDUCER,30 psia,Pretty Important,DIGIKEY,$67.65,1,$67.65,Sims,Redshift,Summer II 2022
-SPRING STEEL,31 thou 301 stainless,Necessary for Any Progress,MCMASTER,$46.65,1,$46.65,Internal Mech,Redshift,Spring 2023
-CLEAR ACRYLIC TUBE (STARSHIP),"4""x3-1/2""x1ft",Pretty Important,MCMASTER,95.86,1,$95.86,Starship,Redshift,Spring 2023
-PNEUMATIC TUBING,"50 ft 1/4"" roll",Necessary for Any Progress,MCMASTER,$41.00,1,$41.00,Propulsion,Redshift,Fall 2022
-301 SPRING STEEL,59 thou,Necessary for Any Progress,MCMASTER,$54.82,2,$109.64,Infernal Mech,Redshift,Summer II 2022
-FIBERGLASS HEAT SHIELDING,5ft roll of heat shielding for pneumatic tubes,Pretty Important,AMAZON,$8.99,8,$71.92,Propulsion,Redshift,Spring 2023
-FIBERGLASS HEAT SHIELDING,5ft roll of heat shielding for pneumatic tubes,Necessary for Any Progress,AMAZON,$8.99,8,$71.92,Propulsion,Redshift,Fall 2022
-COUPLER,"6"" x 12""",Necessary for Any Progress,MADCOW,77.5,3,$232.50,Internal Mech,Redshift,Spring 2023
-BODY TUBE,"6"" x 60""",Necessary for Any Progress,MADCOW,259,2,$518.00,Internal Mech,Redshift,Spring 2023
-MOTOR CASING,Aerotech 75mm 2g,Pretty Important,CHRIS'S ROCKETRY,541.99,1,$541.99,Internal Mech,Redshift,Spring 2023
-MOTOR,Aerotech K1800ST-PS,Necessary for Any Progress,CHRIS'S ROCKETRY,249.99,2,$499.98,Internal Mech,Redshift,Spring 2023
-"THREADED RODS, AL TUBES (STARSHIP)",all other stuff,Pretty Important,,250,1,$250.00,Starship,Redshift,Spring 2023
-"6061 ALUMINUM 1/4"" THICK, 12"" X 12""",Aluminum stock for Bulkheads and Structure,Pretty Important,MCMASTER,$35.61,2,$71.22,Airframe,Redshift,Fall 2022
-"6061 ALUMINUM 1/8"" THICK, 12"" X 12""",Aluminum stock for Bulkheads and Structure,Pretty Important,MCMASTER,$35.86,1,$35.86,Airframe,Redshift,Summer II 2022
-"6061 ALUMINUM 1/8"" THICK, 12"" X 12""",Aluminum stock for Bulkheads and Structure,Pretty Important,MCMASTER,$35.86,1,$35.86,Airframe,Redshift,Summer I 2022
-BEARING,Angled contact double row,Pretty Important,MCMASTER,$44.82,1,$44.82,Internal Mech,Redshift,Spring 2023
-BEARING,Angled contact double row,Pretty Important,MCMASTER,$44.82,3,$134.46,Internal Mech,Redshift,Fall 2022
-BEARING,Angled contact single row,Pretty Important,MCMASTER,$40.87,2,$81.74,Internal Mech,Redshift,Spring 2023
-BEARING,Angled contact single row,Pretty Important,MCMASTER,$40.87,3,$122.61,Internal Mech,Redshift,Fall 2022
-BOLTS (STARSHIP),Barrel Binding Bolts,Pretty Important,MCMASTER,2.77,18,$49.86,Starship,Redshift,Spring 2023
-EXTERNAL SWISS? CLAMP,based on similar past LTC jobs,Necessary for Any Progress,LTC PROTO,$713.00,1,$713.00,Internal Mech,Redshift,Spring 2023
-GROUNDSTATION HOLDER BOX?,"Battery, GPS, misc wiring, 3d printed case",Not necessary,DIGIKEY,$50.00,2,$100.00,Avionics,Redshift,Spring 2023
-ALUMINUM PLATE STOCK,better blast shield,Pretty Important,MCMASTER,$13.63,2,$27.26,Propulsion,Redshift,Fall 2022
-INJECTOR BOLTS,"Black-Oxide Alloy Steel Socket Head Screw, 1/2""-20 Thread Size, 1-7/8"" Long",Pretty Important,MCMASTER,$4.29,12,$51.48,Propulsion,Redshift,Spring 2023
-INJECTOR BOLTS,"Black-Oxide Alloy Steel Socket Head Screw, 1/2""-20 Thread Size, 1-7/8"" Long",Necessary for Any Progress,MCMASTER,$4.29,12,$51.48,Propulsion,Redshift,Fall 2022
-"CARBON FIBER SHEET ~ 1/8"" X 12"" X 12""",Carbon Stock for Bulkheads and Structure,Necessary for Any Progress,DRAGON PLATE,$59.94,2,$119.88,Airframe,Redshift,Fall 2022
-"CARBON FIBER SHEET ~ 1/8"" X 12"" X 12""",Carbon Stock for Bulkheads and Structure,Necessary for Any Progress,DRAGON PLATE,$59.94,1,$59.94,Airframe,Redshift,Summer II 2022
-"CARBON FIBER SHEET ~ 1/8"" X 12"" X 12""",Carbon Stock for Bulkheads and Structure,Necessary for Any Progress,DRAGON PLATE,$59.94,1,$59.94,Airframe,Redshift,Summer I 2022
-29MM MMT,Christmass tree memes,Pretty Important,,4,2,$8.00,Avionics,Redshift,Spring 2023
-"3IN MAILING TOOB, SET OF 2",Christmass tree memes,Pretty Important,,13,1,$13.00,Avionics,Redshift,Spring 2023
-CHRISTMAS TREE PCBS,Christmass tree memes,Pretty Important,,10,1,$10.00,Avionics,Redshift,Spring 2023
-CHRISTMAS TREE PCBA COMPONENTS,Christmass tree memes,Pretty Important,,20,4,$80.00,Avionics,Redshift,Spring 2023
-"SECO SEALS, ASSORTED",Cold flow,Necessary for Any Progress,SECO,$200.00,1,$200.00,Propulsion,Redshift,Summer I 2022
-DRY ICE,"Cold flow, hot fire",Necessary for Any Progress,BROOKLINE ICE COMPANY,$50.00,2,$100.00,Propulsion,Redshift,Summer I 2022
-KEROSENE,"Cold flow, hot fire",Necessary for Any Progress,HOME DEPOT,$26.97,3,$80.91,Propulsion,Redshift,Summer I 2022
-ANGULAR-CONTACT BALL BEARING,Compact External Marman Clamp,Necessary for Any Progress,MCMASTER,$39.33,2,$78.66,Internal Mech,Redshift,Summer II 2022
-BALL BEARING,Compact External Marman Clamp,Necessary for Any Progress,MCMASTER,$13.09,2,$26.18,Internal Mech,Redshift,Summer II 2022
-NEW RELEASE MOUNTS,Compact External Marman Clamp,Necessary for Any Progress,LTC,$40.00,4,$160.00,Internal Mech,Redshift,Summer I 2022
-NEW V-CLAMPS,Compact External Marman Clamp,Necessary for Any Progress,LTC,$25.00,8,$200.00,Internal Mech,Redshift,Summer I 2022
-301 SPRING STEEL,Compact External Marman Clamp,Necessary for Any Progress,MCMASTER,$37.61,2,$75.22,Internal Mech,Redshift,Summer I 2022
-ANGULAR-CONTACT BALL BEARING,Compact External Marman Clamp,Pretty Important,MCMASTER,$39.33,1,$39.33,Internal Mech,Redshift,Summer I 2022
-BALL BEARING,Compact External Marman Clamp,Pretty Important,MCMASTER,$13.09,1,$13.09,Internal Mech,Redshift,Summer I 2022
-NEW FLANGES,Compact External Marman Clamp,Necessary for Any Progress,LTC,$180.00,1,$180.00,Internal Mech,Redshift,Summer I 2022
-1/4-12 4-START ACME LEAD SCREW,Compact External Marman Clamp,Necessary for Any Progress,MCMASTER,$10.72,1,$10.72,Internal Mech,Redshift,Summer II 2022
-1/4-12 4-START ACME LEAD SCREW,Compact External Marman Clamp,Necessary for Any Progress,MCMASTER,$10.72,1,$10.72,Internal Mech,Redshift,Summer I 2022
-LOX INLET HOSE,cryo hose for inlet,Pretty Important,FLEXLINE,$125.50,1,$125.50,Propulsion,Redshift,Spring 2023
-LOX INLET HOSE,cryo hose for inlet,Necessary for Any Progress,FLEXLINE,$125.50,1,$125.50,Propulsion,Redshift,Fall 2022
-PRESSURE TRANSDUCER,"Differential, -1 kPa to 1 kPa, for car-mounted airspeed sensor",Necessary for Any Progress,DIGIKEY,$47.04,2,$94.08,Internal Mech,Redshift,Spring 2023
-PRESSURE TRANSDUCER,"Differential, -1 kPa to 1 kPa, for car-mounted airspeed sensor",Necessary for Any Progress,DIGIKEY,$47.04,2,$94.08,Internal Mech,Redshift,Fall 2022
-GRAFOIL,Engine gasket,Necessary for Any Progress,MCMASTER,$26.12,2,$52.24,Propulsion,Redshift,Summer I 2022
-BODY TUBE (PROJECT 2 STAGE),FG/BT body tube. will try to reuse as much from lab,Necessary for Any Progress,ARR/APOGEE/WILDMAN,200,1,$200.00,Airframe,Redshift,Spring 2023
-"FIBER GLASS SHEET 1/16"" THICK X 12"" X 12""",Fiber glass stock for Bulkheads and Structure,Pretty Important,MCMASTER,$18.08,2,$36.16,Airframe,Redshift,Fall 2022
-NOSE CONE,"fillament wound FG 6""",Necessary for Any Progress,COMPOSITE WAREHOUSE,168.99,1,$168.99,Internal Mech,Redshift,Spring 2023
-CF FINS,fins - mildy important for flight,Necessary for Any Progress,IN HOUSE,200,1,$200.00,Airframe,Redshift,Spring 2023
--06 JIC CAPS,fitting,Necessary for Any Progress,TITAN FITTINGS,$7.14,2,$14.28,Propulsion,Redshift,Summer II 2022
--08 JIC ELBOW M-->F,fitting,Necessary for Any Progress,TITAN FITTINGS,$48.51,2,$97.02,Propulsion,Redshift,Summer II 2022
--04 TO -08 NPT BUSHING,fitting,Necessary for Any Progress,GRAINGER,$6.15,2,$12.30,Propulsion,Redshift,Summer II 2022
--08 JIC TEE,fitting,Necessary for Any Progress,TITAN FITTINGS,$53.88,1,$53.88,Propulsion,Redshift,Summer II 2022
-MK1 FLANGE,flange for MK1,Necessary for Any Progress,ELLIE FROM CHINESE PLACE,250,1,$250.00,Airframe,Redshift,Spring 2023
-"3/4"" SHEET METAL BLAST SHIELD",For blast shield redesign,Pretty Important,MCMASTER,$115.14,1,$115.14,Propulsion,Redshift,Spring 2023
-ALUMINUM FOR CASTER ADAPTERS TO DOLLY,"for bolsterng casters, one is dead",Necessary for Any Progress,MCMASTER,$14.87,4,$59.48,Propulsion,Redshift,Summer II 2022
-SHAFT COLLAR,for car-mounted parachute testing.,Necessary for Any Progress,MCMASTER,$7.69,2,$15.38,Infernal Mech,Redshift,Summer II 2022
-CASTER WHEELS,for dolly,Necessary for Any Progress,AMAZON,$26.99,1,$26.99,Propulsion,Redshift,Fall 2022
-MESH FOR FAN,for electronics box,Necessary for Any Progress,MCMASTER,$4.40,1,$4.40,Propulsion,Redshift,Summer II 2022
-HINGES,for electronics box,Necessary for Any Progress,MCMASTER,$4.54,1,$4.54,Propulsion,Redshift,Summer II 2022
-LATCH,for electronics box,Necessary for Any Progress,MCMASTER,$9.73,1,$9.73,Propulsion,Redshift,Summer II 2022
-ICE,for filling tank with LN2,Necessary for Any Progress,BROOKLINE ICE COMPANY,$51.00,1,$51.00,Propulsion,Redshift,Summer II 2022
-TAP,for fixing fittings,Necessary for Any Progress,MCMASTER,$49.84,1,$49.84,Propulsion,Redshift,Summer II 2022
-FOAM FOR INSULATION,for insulating pipes,Pretty Important,FOAM FACTORY,$50.00,1,$50.00,Propulsion,Redshift,Summer II 2022
-ALUMINUM STOCK FOR LOAD CELL BLOCK,for load cell carriage,Necessary for Any Progress,MCMASTER,$9.10,1,$9.10,Propulsion,Redshift,Summer II 2022
-GUSSET,for load cell carriage,Necessary for Any Progress,8020.NET,$11.12,1,$11.12,Propulsion,Redshift,Summer II 2022
-DRY ICE,for lox flow line during hotfire,Necessary for Any Progress,BROOKLINE,$51.00,1,$51.00,Propulsion,Redshift,Spring 2023
-DRY ICE,for lox flow line during hotfire,Necessary for Any Progress,BROOKLINE,$51.00,1,$51.00,Propulsion,Redshift,Fall 2022
-CASTER,"for moving test stand, one is dead",Necessary for Any Progress,MCMASTER,$66.21,1,$66.21,Propulsion,Redshift,Summer II 2022
-PC MAX,for release mount test parts,Pretty Important,POLYMAKER,$38.99,1,$38.99,Internal Mech,Redshift,Summer II 2022
-KERO VALVE,for vent tree,Necessary for Any Progress,MCMASTER,$40.99,1,$40.99,Propulsion,Redshift,Summer II 2022
-MCMASTER HARDWARE,For wind tunnel setup,Necessary for Any Progress,MCMASTER,$30.00,1,$30.00,Sims,Redshift,Summer II 2022
-GRAVEL,gravel to put under,Pretty Important,LOWES,$3.98,16,$63.68,Propulsion,Redshift,Summer II 2022
-LIQUID OXYGEN DEWAR,Hot fire,Necessary for Any Progress,PRAXAIR,$250.00,1,$250.00,Propulsion,Redshift,Summer I 2022
-GRAVEL,Hot fire,Pretty Important,LOWES,$3.98,3,$11.94,Propulsion,Redshift,Summer I 2022
-BLAST SHIELD,Hot fire,Pretty Important,HOME DEPOT,$174.00,1,$174.00,Propulsion,Redshift,Summer I 2022
-BLAST SHIELD,hot fire protection,Pretty Important,HOME DEPOT,$174.00,1,$174.00,Propulsion,Redshift,Summer II 2022
-KERO SPILL ABSORBENT,hotfire kero cleanup,Pretty Important,GRAINGER,$7.17,4,$28.68,Propulsion,Redshift,Spring 2023
-KERO SPILL ABSORBENT,hotfire kero cleanup,Necessary for Any Progress,GRAINGER,$7.17,4,$28.68,Propulsion,Redshift,Fall 2022
-304 SS STOCK,injector reconstruction,Necessary for Any Progress,MCMASTER,$70.03,1,$70.03,Propulsion,Redshift,Fall 2022
-INSULATION,Insulation,Pretty Important,MCMASTER,$16.44,2,$32.88,Propulsion,Redshift,Summer I 2022
-PNEUMATIC PISTON,Internal Marman Clamp / General Research,Pretty Important,MCMASTER,$105.87,1,$105.87,Internal Mech,Redshift,Fall 2022
-PNEUMATIC PISTON,Internal Marman Clamp / General Research,Pretty Important,MCMASTER,$105.87,1,$105.87,Internal Mech,Redshift,Summer I 2022
-MOTOR (STARSHIP),L3150-Vmax,Pretty Important,MOTOR JOE,351,1,$351.00,Starship,Redshift,Spring 2023
-THUMB DRIVES 128GB,Local file transfer and storage,Necessary for Any Progress,AMAZON,$13.98,6,$83.88,Sims,Redshift,Fall 2022
-AEROTECH 98/5120 HARDWARE PACK,Mark 1 Motor Casing + hardware,Necessary for Any Progress,CHRIS'S ROCKETRY,$555.19,1,$555.19,Airframe,Redshift,Fall 2022
-AEROTECH 98/5120 HARDWARE PACK,Mark 1 Motor Casing + hardware,Pretty Important,CHRIS'S ROCKETRY,$555.19,0,$0.00,Airframe,Redshift,Summer II 2022
-AEROTECH 98/5120 HARDWARE PACK,Mark 1 Motor Casing + hardware,Pretty Important,CHRIS'S ROCKETRY,$555.19,1,$555.19,Airframe,Redshift,Summer I 2022
-AEROTECH L2500ST-P 98MM/5120,Mark 1 Subsonic Motor,Necessary for Any Progress,CHRIS'S ROCKETRY,$366.00,1,$366.00,Airframe,Redshift,Fall 2022
-AEROTECH L2500ST-P 98MM/5120,Mark 1 Subsonic Motor,Pretty Important,CHRIS'S ROCKETRY,$366.00,0,$0.00,Airframe,Redshift,Summer II 2022
-AEROTECH L2500ST-P 98MM/5120,Mark 1 Subsonic Motor,Pretty Important,CHRIS'S ROCKETRY,$366.00,1,$366.00,Airframe,Redshift,Summer I 2022
-WIND TUNNEL SETUP HARDWARE AND ELECTRONICS,McMaster,Pretty Important,,$30.00,1,$30.00,Sims,Redshift,Fall 2022
-"1/4""-20 X 6' STEEL THREADED ROD",MK1 Motor Section,Necessary for Any Progress,MCMASTER,$8.76,3,$26.28,Airframe,Redshift,Fall 2022
-98 MM X 4' FIBERGLASS TUBE,MK1 Motor Section,Necessary for Any Progress,APOGEE ROCKETS,$115.50,1,$115.50,Airframe,Redshift,Summer I 2022
-"1/4""-20 X 6' STEEL THREADED ROD",MK1 Motor Section,Necessary for Any Progress,MCMASTER,$8.76,1,$8.76,Airframe,Redshift,Summer I 2022
-"3/8"" OD ALUMINUM TUBE",MK1 Motor Section Support,Necessary for Any Progress,MCMASTER,$48.86,3,$146.58,Airframe,Redshift,Fall 2022
-"3/8"" OD ALUMINUM TUBE",MK1 Motor Section Support,Necessary for Any Progress,MCMASTER,$48.86,1,$48.86,Airframe,Redshift,Summer I 2022
-CARBON FIBRE TRANSITION SECTION,MK1 Transition Section,Not necessary,UNKNOWN,$500.00,1,$500.00,Airframe,Redshift,Fall 2022
-AT F50-6T,Motors for christmass tree project,Pretty Important,WILDMAN,36,4,$144.00,Avionics,Redshift,Spring 2023
-INTERNAL MARMAN CLAMP CNC COMPONENTS,"Not designed yet, based on similar past LTC jobs",Necessary for Any Progress,LTC PROTO,$713.00,1,$713.00,Internal Mech,Redshift,Fall 2022
-LOX LINE DISCONNECT MACHINED PARTS,"Not designed yet, based on similar past LTC jobs",Pretty Important,LTC PROTO,$400.00,1,$400.00,Internal Mech,Redshift,Fall 2022
-MK1 MARMAN CLAMP CNC PARTS,"Not designed yet, based on similar past LTC jobs",Pretty Important,LTC PROTO,$713.00,1,$713.00,Internal Mech,Redshift,Fall 2022
-INTERNAL MARMAN CLAMP CNC COMPONENTS,"Not fully designed yet, based on similar past LTC jobs",Necessary for Any Progress,LTC PROTO,$713.00,1,$713.00,Internal Mech,Redshift,Spring 2023
-BREAKOUT BOARDS WITH ADCS,oops the adcs don't work,Necessary for Any Progress,AMAZON,$38.22,1,$38.22,Propulsion,Redshift,Summer II 2022
-LOX,oxidizer for hot-fire,Necessary for Any Progress,PRAXAIR,$200.00,1,$200.00,Propulsion,Redshift,Summer II 2022
--04 SECO SEALS,pack of 50,Necessary for Any Progress,SECO,$71.23,1,$71.23,Propulsion,Redshift,Spring 2023
--08 SECO SEALS,pack of 50,Necessary for Any Progress,SECO,$82.47,1,$82.47,Propulsion,Redshift,Spring 2023
--04 SECO SEALS,pack of 50,Necessary for Any Progress,SECO,$71.23,1,$71.23,Propulsion,Redshift,Fall 2022
--08 SECO SEALS,pack of 50,Necessary for Any Progress,SECO,$82.47,1,$82.47,Propulsion,Redshift,Fall 2022
-KERVENT SOLENOID,pneumatic double acting solenoid,Pretty Important,GRANGIER,$202.80,1,$202.80,Propulsion,Redshift,Spring 2023
-KERVENT SOLENOID,pneumatic double acting solenoid,Necessary for Any Progress,GRANGIER,$202.80,1,$202.80,Propulsion,Redshift,Fall 2022
-LOX,Propulsionellant dewar for hotfire,Necessary for Any Progress,MEDTECH,$296.96,1,$296.96,Propulsion,Redshift,Spring 2023
-LOX,Propulsionellant dewar for hotfire,Necessary for Any Progress,MEDTECH,$296.96,1,$296.96,Propulsion,Redshift,Fall 2022
-KERO,Propulsionellant for hotfire,Necessary for Any Progress,HOME DEPOT,$35.00,2,$70.00,Propulsion,Redshift,Spring 2023
-KERO,Propulsionellant for hotfire,Pretty Important,HOME DEPOT,$35.00,2,$70.00,Propulsion,Redshift,Fall 2022
-TARP (12' X 16' ),rain protection for test stand,Necessary for Any Progress,HOME DEPOT,$31.58,1,$31.58,Propulsion,Redshift,Summer II 2022
-MK1 SECOND MOTOR,second Motor for Mk1 (unclear what size - hopefully L3),Necessary for Any Progress,WILDMAN,400,1,$400.00,Airframe,Redshift,Spring 2023
-FIN CAN (STARSHIP),Sheet metal,Pretty Important,XOMETRY,400,1,$400.00,Starship,Redshift,Spring 2023
-SECO SEALS,"SS crush seals (-08), emailed quote, packet of 50",Pretty Important,SECO SEALS,$70.00,1,$70.00,Propulsion,Redshift,Summer II 2022
-FIBER GLASS,stock,Necessary for Any Progress,MCMASTER,100,1,$100.00,Airframe,Redshift,Spring 2023
-SSD 2TB,Storage for archive of simulation files,Pretty Important,AMAZON,$152.99,1,$152.99,Sims,Redshift,Fall 2022
-KERINLET DUCER HOSE,teflon hose for kero inlet ducer,Pretty Important,FLEXLINE,$55.95,1,$55.95,Propulsion,Redshift,Spring 2023
-KERINLET DUCER HOSE,teflon hose for kero inlet ducer,Necessary for Any Progress,FLEXLINE,$55.95,1,$55.95,Propulsion,Redshift,Fall 2022
-ELECTRONICS SHENANIGANS,"the adcs on the test stand died, not sure what it will take to fix them",Necessary for Any Progress,N/A,$50.00,1,$50.00,Propulsion,Redshift,Summer II 2022
-SHIPPING,to account for shipping,Pretty Important,,$60.00,1,$60.00,Propulsion,Redshift,Summer II 2022
-UHAUL,transport,Necessary for Any Progress,UHAUL,$300.00,1,$300.00,Propulsion,Redshift,Spring 2023
-UHAUL,transport,Necessary for Any Progress,UHAUL,$300.00,1,$300.00,Propulsion,Redshift,Fall 2022
-CESARONI K1440,TRD Motor,Pretty Important,CHRIS'S ROCKETRY,$196.26,1,$196.26,Airframe,Redshift,Fall 2022
-CESARONI K1440,TRD Motor,Pretty Important,CHRIS'S ROCKETRY,$196.26,0,$0.00,Airframe,Redshift,Summer II 2022
-CESARONI K1440,TRD Motor,Pretty Important,CHRIS'S ROCKETRY,$196.26,1,$196.26,Airframe,Redshift,Summer I 2022
-ASSORTED NUTS AND BOLTS,unforseen circumstances,Pretty Important,MCMASTER,$50.00,1,$50.00,Propulsion,Redshift,Fall 2022
-BATTERY CHARGER/PDB ICS,Vertical test stand/MK2 avionics,Necessary for Any Progress,DIGIKEY/MOUSER,$100.00,1,$100.00,Avionics,Redshift,Summer I 2022
-PROPULSION CONTROL BOARD ICS/PASSIVES,Vertical test stand/MK2 avionics,Necessary for Any Progress,DIGIKEY/MOUSER,$75.00,1,$75.00,Avionics,Redshift,Summer I 2022
-PCBS FOR PROPULSION,Vertical test stand/MK2 avionics,Pretty Important,JLCPCB,$60.00,1,$60.00,Avionics,Redshift,Summer I 2022
-ANEMOMETER,wind tunnel velocity measurement,Pretty Important,GRAINGER,$156.53,1,$156.53,Sims,Redshift,Fall 2022
-ASSORTED BOLTS AND STOCK,,Pretty Important,MCMASTER,$150.00,1,$150.00,Propulsion,Redshift,Spring 2023
-SHIPPING,,,,$100.00,1,$100.00,Propulsion,Redshift,Spring 2023
-GROUNDSTATION PCBS,,Necessary for Any Progress,JLC,$100.00,1,$100.00,Avionics,Redshift,Spring 2023
-GROUNDSTATION ELECTRONICS,,Necessary for Any Progress,DIGIKEY,$40.00,5,$200.00,Avionics,Redshift,Spring 2023
-FCB V2 PCBS AND COMPONENTS,,Necessary for Any Progress,"JLC, DIGIKEY",$160.00,10,"$1,600.00",Avionics,Redshift,Spring 2023
-BLUETOOTH ARMING SWITCH PCBS,,Not necessary,JLC,$50.00,1,$50.00,Avionics,Redshift,Spring 2023
-DAQ V4 PCB,,Not necessary,JLCPCB,$45.00,1,$45.00,Avionics,Redshift,Spring 2023
-DAQ V4 COMPONENTS,,Not necessary,DIGIKEY,$200.00,1,$200.00,Avionics,Redshift,Spring 2023
-PROPULSION SOLENOID BOARD PCBS,,Necessary for Any Progress,JLC,$100.00,1,$100.00,Avionics,Redshift,Spring 2023
-PROPULSION SOLENOID BOARD COMPONENTS,,Necessary for Any Progress,DIGIKEY,$40.00,3,$120.00,Avionics,Redshift,Spring 2023
-RADIO + GPS BOARD PROJECT CONTINUATION,,Pretty Important,"JLCPCB, DIGIKEY",$200.00,1,$200.00,Avionics,Redshift,Spring 2023
-NOSE CONE (2 STAGE),,Necessary for Any Progress,COMPOSITE WAREHOUSE,80,1,$80.00,Airframe,Redshift,Spring 2023
-HAZMAT SHIPPING,,Pretty Important,CHRIS'S ROCKETRY,$69.99,1,$69.99,Airframe,Redshift,Fall 2022
-TRANSITION FOAM,,Necessary for Any Progress,HOME DEPOT,$19.55,1,$19.55,Airframe,Redshift,Fall 2022
-AMAZON SHIPPING,,Necessary for Any Progress,,$10.00,1,$10.00,Sims,Redshift,Fall 2022
-SHIPPING,,Necessary for Any Progress,,$100.00,1,$100.00,Propulsion,Redshift,Fall 2022
-HARD DRIVE CABLE,,Necessary for Any Progress,AMAZON,$7.49,1,$7.49,Sims,Redshift,Summer II 2022
-"AMAZON, DIGIKEY, MCMASTER SHIPPING",,Necessary for Any Progress,"AMAZON, DIGIKEY, MCMASTER",$25.00,1,$25.00,Sims,Redshift,Summer II 2022
-PROPULSION CONTROL BOARD PARTS,,Necessary for Any Progress,,$200.00,1,$200.00,Avionics,Redshift,Summer II 2022
-PROPULSION PCBS,,Pretty Important,,$85.00,1,$85.00,Avionics,Redshift,Summer II 2022
-BLE ARMING SWITCH PARTS,,Pretty Important,,$50.00,1,$50.00,Avionics,Redshift,Summer II 2022
-DAQ PARTS,,Not necessary,,,1,$0.00,Avionics,Redshift,Summer II 2022
-ANTENNAS/RF TROUBLESHOOTING FOR FCBV0,,Not necessary,,$50.00,1,$50.00,Avionics,Redshift,Summer II 2022
-3/8 FLAT MILL,,Necessary for Any Progress,MCMASTER,$26.34,1,$26.34,Internal Mech,Redshift,Summer II 2022
-1/2 FLAT MILL,,Necessary for Any Progress,MCMASTER,$44.30,1,$44.30,Infernal Mech,Redshift,Summer II 2022
-HAZMAT SHIPPING,,Necessary for Any Progress,CHRIS'S ROCKETRY,$69.99,1,$69.99,Airframe,Redshift,Summer II 2022
-TRANSITION FOAM,,Necessary for Any Progress,HOME DEPOT,$19.55,1,$19.55,Airframe,Redshift,Summer II 2022
-HAZMAT SHIPPING,,Necessary for Any Progress,CHRIS'S ROCKETRY,$69.99,1,$69.99,Airframe,Redshift,Summer I 2022
-TRANSITION FOAM,,Necessary for Any Progress,HOME DEPOT,$19.55,1,$19.55,Airframe,Redshift,Summer I 2022
+UHMWPE CORD,0.8 mm,Pretty Important,AMAZON,12.95,3,38.85,Internal Mech,Redshift,Spring 2023
+UHMWPE CORD,0.8 mm,Pretty Important,AMAZON,12.95,3,38.85,Internal Mech,Redshift,Fall 2022
+MA OUTPUT DUCERS,0-1000 psi 4-20mA ducers,Necessary for Any Progress,GRAINGER,469.35,2,938.70,Propulsion,Redshift,Spring 2023
+MA OUTPUT DUCERS,0-1000 psi 4-20mA ducers,Necessary for Any Progress,GRAINGER,469.35,2,938.70,Propulsion,Redshift,Fall 2022
+-06 K-SEAL,-06 PTFE k-seal for kero outlet,Necessary for Any Progress,TECHNETICS,63.00,1,63.00,Propulsion,Redshift,Spring 2023
+-06 K-SEAL,-06 PTFE k-seal for kero outlet,Necessary for Any Progress,TECHNETICS,63.00,1,63.00,Propulsion,Redshift,Fall 2022
+-08 K-SEAL,-08 k-seal for kero inlet and lox inlet,Necessary for Any Progress,TECHNETICS,63.00,2,126.00,Propulsion,Redshift,Spring 2023
+-08 K-SEAL,-08 k-seal for kero inlet and lox inlet,Necessary for Any Progress,TECHNETICS,63.00,2,126.00,Propulsion,Redshift,Fall 2022
+ALUMINUM TUBE,"1/2"" x 1'",Pretty Important,,10.01,3,30.03,Internal Mech,Redshift,Spring 2023
+BOLTS FOR LOAD CELL,"1/2""-20 Thread Size, 1-7/8"" Long",Necessary for Any Progress,MCMASTER,4.29,1,4.29,Propulsion,Redshift,Summer II 2022
+LEAD SCREW NUT,1/4-12 4-start cylindrical,Pretty Important,MCMASTER,45.38,2,90.76,Internal Mech,Redshift,Spring 2023
+LEAD SCREW NUT,1/4-12 4-start threaded,Pretty Important,MCMASTER,77.73,2,155.46,Internal Mech,Redshift,Spring 2023
+LEAD SCREW NUT,1/4-12 4-start threaded,Pretty Important,MCMASTER,77.73,3,233.19,Internal Mech,Redshift,Fall 2022
+THREADED ROD,1/4-20 x 6',Pretty Important,MCMASTER,7.87,2,15.74,Internal Mech,Redshift,Spring 2023
+UNGROUNDED TC PROBES,"1/8"" miniplug probes",Pretty Important,GRAINGER,34.90,2,69.80,Propulsion,Redshift,Spring 2023
+UNGROUNDED TC PROBES,"1/8"" miniplug probes",Necessary for Any Progress,GRAINGER,34.90,2,69.80,Propulsion,Redshift,Fall 2022
+BURST DISKS,1000 psi 304ss tapered seal rupture discs,Pretty Important,HIGH PRESSURE EQUIPMENT,50.00,2,100.00,Propulsion,Redshift,Summer II 2022
+FIBERGLASS SHEET,"12"" x 12"" x 1/4"", G10",Necessary for Any Progress,MCMASTER,35.95,4,143.80,Internal Mech,Redshift,Spring 2023
+FIBERGLASS SHEET,"12"" x 12"" x 1/8"" G10",Necessary for Any Progress,MCMASTER,24.35,4,97.40,Internal Mech,Redshift,Spring 2023
+ACRYLIC TUBE,"12"" x 6""",Pretty Important,MCMASTER,106.77,1,106.77,Internal Mech,Redshift,Spring 2023
+CARBON FIBER SHEET (STARSHIP),"12""x12""",Pretty Important,MCMASTER,130.00,1,130.00,Starship,Redshift,Spring 2023
+FIBERGLASS SHEET (STARSHIP),"12""x12""x1/4,G10",Pretty Important,MCMASTER,35.95,1,35.95,Starship,Redshift,Spring 2023
+CAMERA,130º view,Pretty Important,RASPBERRY PI,60.00,3,180.00,Internal Mech,Redshift,Spring 2023
+SPI PRESSURE TRANSDUCER,15 psia,Pretty Important,DIGIKEY,66.28,1,66.28,Sims,Redshift,Summer II 2022
+KEROSENE,1-K 9.33/gal. 2.5 gallon jug,Necessary for Any Progress,WALMART,23.32,4,93.28,Propulsion,Redshift,Summer II 2022
+2 STAGE MOTORS,2 38mm rocket motors,Necessary for Any Progress,WILDMAN,300.00,1,300.00,Airframe,Redshift,Spring 2023
+6061-T6 STOCK,"2""x3""x6""",Necessary for Any Progress,MCMASTER,56.31,3,168.93,Internal Mech,Redshift,Summer II 2022
+NICHROME WIRE,28 awg,Pretty Important,AMAZON,7.99,3,23.97,Internal Mech,Redshift,Spring 2023
+NICHROME WIRE,28 awg,Pretty Important,AMAZON,7.99,3,23.97,Internal Mech,Redshift,Fall 2022
+SPILL ABSORBENT,3.43 lb bags of kero cleanup,Necessary for Any Progress,AMAZON,16.99,2,33.98,Propulsion,Redshift,Summer II 2022
+SPI PRESSURE TRANSDUCER,30 psia,Pretty Important,DIGIKEY,67.65,1,67.65,Sims,Redshift,Summer II 2022
+SPRING STEEL,31 thou 301 stainless,Necessary for Any Progress,MCMASTER,46.65,1,46.65,Internal Mech,Redshift,Spring 2023
+CLEAR ACRYLIC TUBE (STARSHIP),"4""x3-1/2""x1ft",Pretty Important,MCMASTER,95.86,1,95.86,Starship,Redshift,Spring 2023
+PNEUMATIC TUBING,"50 ft 1/4"" roll",Necessary for Any Progress,MCMASTER,41.00,1,41.00,Propulsion,Redshift,Fall 2022
+301 SPRING STEEL,59 thou,Necessary for Any Progress,MCMASTER,54.82,2,109.64,Infernal Mech,Redshift,Summer II 2022
+FIBERGLASS HEAT SHIELDING,5ft roll of heat shielding for pneumatic tubes,Pretty Important,AMAZON,8.99,8,71.92,Propulsion,Redshift,Spring 2023
+FIBERGLASS HEAT SHIELDING,5ft roll of heat shielding for pneumatic tubes,Necessary for Any Progress,AMAZON,8.99,8,71.92,Propulsion,Redshift,Fall 2022
+COUPLER,"6"" x 12""",Necessary for Any Progress,MADCOW,77.50,3,232.50,Internal Mech,Redshift,Spring 2023
+BODY TUBE,"6"" x 60""",Necessary for Any Progress,MADCOW,259.00,2,518.00,Internal Mech,Redshift,Spring 2023
+MOTOR CASING,Aerotech 75mm 2g,Pretty Important,CHRIS'S ROCKETRY,541.99,1,541.99,Internal Mech,Redshift,Spring 2023
+MOTOR,Aerotech K1800ST-PS,Necessary for Any Progress,CHRIS'S ROCKETRY,249.99,2,499.98,Internal Mech,Redshift,Spring 2023
+"THREADED RODS, AL TUBES (STARSHIP)",all other stuff,Pretty Important,,250.00,1,250.00,Starship,Redshift,Spring 2023
+"6061 ALUMINUM 1/4"" THICK, 12"" X 12""",Aluminum stock for Bulkheads and Structure,Pretty Important,MCMASTER,35.61,2,71.22,Airframe,Redshift,Fall 2022
+"6061 ALUMINUM 1/8"" THICK, 12"" X 12""",Aluminum stock for Bulkheads and Structure,Pretty Important,MCMASTER,35.86,1,35.86,Airframe,Redshift,Summer II 2022
+"6061 ALUMINUM 1/8"" THICK, 12"" X 12""",Aluminum stock for Bulkheads and Structure,Pretty Important,MCMASTER,35.86,1,35.86,Airframe,Redshift,Summer I 2022
+BEARING,Angled contact double row,Pretty Important,MCMASTER,44.82,1,44.82,Internal Mech,Redshift,Spring 2023
+BEARING,Angled contact double row,Pretty Important,MCMASTER,44.82,3,134.46,Internal Mech,Redshift,Fall 2022
+BEARING,Angled contact single row,Pretty Important,MCMASTER,40.87,2,81.74,Internal Mech,Redshift,Spring 2023
+BEARING,Angled contact single row,Pretty Important,MCMASTER,40.87,3,122.61,Internal Mech,Redshift,Fall 2022
+BOLTS (STARSHIP),Barrel Binding Bolts,Pretty Important,MCMASTER,2.77,18,49.86,Starship,Redshift,Spring 2023
+EXTERNAL SWISS? CLAMP,based on similar past LTC jobs,Necessary for Any Progress,LTC PROTO,713.00,1,713.00,Internal Mech,Redshift,Spring 2023
+GROUNDSTATION HOLDER BOX?,"Battery, GPS, misc wiring, 3d printed case",Not necessary,DIGIKEY,50.00,2,100.00,Avionics,Redshift,Spring 2023
+ALUMINUM PLATE STOCK,better blast shield,Pretty Important,MCMASTER,13.63,2,27.26,Propulsion,Redshift,Fall 2022
+INJECTOR BOLTS,"Black-Oxide Alloy Steel Socket Head Screw, 1/2""-20 Thread Size, 1-7/8"" Long",Pretty Important,MCMASTER,4.29,12,51.48,Propulsion,Redshift,Spring 2023
+INJECTOR BOLTS,"Black-Oxide Alloy Steel Socket Head Screw, 1/2""-20 Thread Size, 1-7/8"" Long",Necessary for Any Progress,MCMASTER,4.29,12,51.48,Propulsion,Redshift,Fall 2022
+"CARBON FIBER SHEET ~ 1/8"" X 12"" X 12""",Carbon Stock for Bulkheads and Structure,Necessary for Any Progress,DRAGON PLATE,59.94,2,119.88,Airframe,Redshift,Fall 2022
+"CARBON FIBER SHEET ~ 1/8"" X 12"" X 12""",Carbon Stock for Bulkheads and Structure,Necessary for Any Progress,DRAGON PLATE,59.94,1,59.94,Airframe,Redshift,Summer II 2022
+"CARBON FIBER SHEET ~ 1/8"" X 12"" X 12""",Carbon Stock for Bulkheads and Structure,Necessary for Any Progress,DRAGON PLATE,59.94,1,59.94,Airframe,Redshift,Summer I 2022
+29MM MMT,Christmass tree memes,Pretty Important,,4.00,2,8.00,Avionics,Redshift,Spring 2023
+"3IN MAILING TOOB, SET OF 2",Christmass tree memes,Pretty Important,,13.00,1,13.00,Avionics,Redshift,Spring 2023
+CHRISTMAS TREE PCBS,Christmass tree memes,Pretty Important,,10.00,1,10.00,Avionics,Redshift,Spring 2023
+CHRISTMAS TREE PCBA COMPONENTS,Christmass tree memes,Pretty Important,,20.00,4,80.00,Avionics,Redshift,Spring 2023
+"SECO SEALS, ASSORTED",Cold flow,Necessary for Any Progress,SECO,200.00,1,200.00,Propulsion,Redshift,Summer I 2022
+DRY ICE,"Cold flow, hot fire",Necessary for Any Progress,BROOKLINE ICE COMPANY,50.00,2,100.00,Propulsion,Redshift,Summer I 2022
+KEROSENE,"Cold flow, hot fire",Necessary for Any Progress,HOME DEPOT,26.97,3,80.91,Propulsion,Redshift,Summer I 2022
+ANGULAR-CONTACT BALL BEARING,Compact External Marman Clamp,Necessary for Any Progress,MCMASTER,39.33,2,78.66,Internal Mech,Redshift,Summer II 2022
+BALL BEARING,Compact External Marman Clamp,Necessary for Any Progress,MCMASTER,13.09,2,26.18,Internal Mech,Redshift,Summer II 2022
+NEW RELEASE MOUNTS,Compact External Marman Clamp,Necessary for Any Progress,LTC,40.00,4,160.00,Internal Mech,Redshift,Summer I 2022
+NEW V-CLAMPS,Compact External Marman Clamp,Necessary for Any Progress,LTC,25.00,8,200.00,Internal Mech,Redshift,Summer I 2022
+301 SPRING STEEL,Compact External Marman Clamp,Necessary for Any Progress,MCMASTER,37.61,2,75.22,Internal Mech,Redshift,Summer I 2022
+ANGULAR-CONTACT BALL BEARING,Compact External Marman Clamp,Pretty Important,MCMASTER,39.33,1,39.33,Internal Mech,Redshift,Summer I 2022
+BALL BEARING,Compact External Marman Clamp,Pretty Important,MCMASTER,13.09,1,13.09,Internal Mech,Redshift,Summer I 2022
+NEW FLANGES,Compact External Marman Clamp,Necessary for Any Progress,LTC,180.00,1,180.00,Internal Mech,Redshift,Summer I 2022
+1/4-12 4-START ACME LEAD SCREW,Compact External Marman Clamp,Necessary for Any Progress,MCMASTER,10.72,1,10.72,Internal Mech,Redshift,Summer II 2022
+1/4-12 4-START ACME LEAD SCREW,Compact External Marman Clamp,Necessary for Any Progress,MCMASTER,10.72,1,10.72,Internal Mech,Redshift,Summer I 2022
+LOX INLET HOSE,cryo hose for inlet,Pretty Important,FLEXLINE,125.50,1,125.50,Propulsion,Redshift,Spring 2023
+LOX INLET HOSE,cryo hose for inlet,Necessary for Any Progress,FLEXLINE,125.50,1,125.50,Propulsion,Redshift,Fall 2022
+PRESSURE TRANSDUCER,"Differential, -1 kPa to 1 kPa, for car-mounted airspeed sensor",Necessary for Any Progress,DIGIKEY,47.04,2,94.08,Internal Mech,Redshift,Spring 2023
+PRESSURE TRANSDUCER,"Differential, -1 kPa to 1 kPa, for car-mounted airspeed sensor",Necessary for Any Progress,DIGIKEY,47.04,2,94.08,Internal Mech,Redshift,Fall 2022
+GRAFOIL,Engine gasket,Necessary for Any Progress,MCMASTER,26.12,2,52.24,Propulsion,Redshift,Summer I 2022
+BODY TUBE (PROJECT 2 STAGE),FG/BT body tube. will try to reuse as much from lab,Necessary for Any Progress,ARR/APOGEE/WILDMAN,200.00,1,200.00,Airframe,Redshift,Spring 2023
+"FIBER GLASS SHEET 1/16"" THICK X 12"" X 12""",Fiber glass stock for Bulkheads and Structure,Pretty Important,MCMASTER,18.08,2,36.16,Airframe,Redshift,Fall 2022
+NOSE CONE,"fillament wound FG 6""",Necessary for Any Progress,COMPOSITE WAREHOUSE,168.99,1,168.99,Internal Mech,Redshift,Spring 2023
+CF FINS,fins - mildy important for flight,Necessary for Any Progress,IN HOUSE,200.00,1,200.00,Airframe,Redshift,Spring 2023
+-06 JIC CAPS,fitting,Necessary for Any Progress,TITAN FITTINGS,7.14,2,14.28,Propulsion,Redshift,Summer II 2022
+-08 JIC ELBOW M-->F,fitting,Necessary for Any Progress,TITAN FITTINGS,48.51,2,97.02,Propulsion,Redshift,Summer II 2022
+-04 TO -08 NPT BUSHING,fitting,Necessary for Any Progress,GRAINGER,6.15,2,12.30,Propulsion,Redshift,Summer II 2022
+-08 JIC TEE,fitting,Necessary for Any Progress,TITAN FITTINGS,53.88,1,53.88,Propulsion,Redshift,Summer II 2022
+MK1 FLANGE,flange for MK1,Necessary for Any Progress,ELLIE FROM CHINESE PLACE,250.00,1,250.00,Airframe,Redshift,Spring 2023
+"3/4"" SHEET METAL BLAST SHIELD",For blast shield redesign,Pretty Important,MCMASTER,115.14,1,115.14,Propulsion,Redshift,Spring 2023
+ALUMINUM FOR CASTER ADAPTERS TO DOLLY,"for bolsterng casters, one is dead",Necessary for Any Progress,MCMASTER,14.87,4,59.48,Propulsion,Redshift,Summer II 2022
+SHAFT COLLAR,for car-mounted parachute testing.,Necessary for Any Progress,MCMASTER,7.69,2,15.38,Infernal Mech,Redshift,Summer II 2022
+CASTER WHEELS,for dolly,Necessary for Any Progress,AMAZON,26.99,1,26.99,Propulsion,Redshift,Fall 2022
+MESH FOR FAN,for electronics box,Necessary for Any Progress,MCMASTER,4.40,1,4.40,Propulsion,Redshift,Summer II 2022
+HINGES,for electronics box,Necessary for Any Progress,MCMASTER,4.54,1,4.54,Propulsion,Redshift,Summer II 2022
+LATCH,for electronics box,Necessary for Any Progress,MCMASTER,9.73,1,9.73,Propulsion,Redshift,Summer II 2022
+ICE,for filling tank with LN2,Necessary for Any Progress,BROOKLINE ICE COMPANY,51.00,1,51.00,Propulsion,Redshift,Summer II 2022
+TAP,for fixing fittings,Necessary for Any Progress,MCMASTER,49.84,1,49.84,Propulsion,Redshift,Summer II 2022
+FOAM FOR INSULATION,for insulating pipes,Pretty Important,FOAM FACTORY,50.00,1,50.00,Propulsion,Redshift,Summer II 2022
+ALUMINUM STOCK FOR LOAD CELL BLOCK,for load cell carriage,Necessary for Any Progress,MCMASTER,9.10,1,9.10,Propulsion,Redshift,Summer II 2022
+GUSSET,for load cell carriage,Necessary for Any Progress,8020.NET,11.12,1,11.12,Propulsion,Redshift,Summer II 2022
+DRY ICE,for lox flow line during hotfire,Necessary for Any Progress,BROOKLINE,51.00,1,51.00,Propulsion,Redshift,Spring 2023
+DRY ICE,for lox flow line during hotfire,Necessary for Any Progress,BROOKLINE,51.00,1,51.00,Propulsion,Redshift,Fall 2022
+CASTER,"for moving test stand, one is dead",Necessary for Any Progress,MCMASTER,66.21,1,66.21,Propulsion,Redshift,Summer II 2022
+PC MAX,for release mount test parts,Pretty Important,POLYMAKER,38.99,1,38.99,Internal Mech,Redshift,Summer II 2022
+KERO VALVE,for vent tree,Necessary for Any Progress,MCMASTER,40.99,1,40.99,Propulsion,Redshift,Summer II 2022
+MCMASTER HARDWARE,For wind tunnel setup,Necessary for Any Progress,MCMASTER,30.00,1,30.00,Sims,Redshift,Summer II 2022
+GRAVEL,gravel to put under,Pretty Important,LOWES,3.98,16,63.68,Propulsion,Redshift,Summer II 2022
+LIQUID OXYGEN DEWAR,Hot fire,Necessary for Any Progress,PRAXAIR,250.00,1,250.00,Propulsion,Redshift,Summer I 2022
+GRAVEL,Hot fire,Pretty Important,LOWES,3.98,3,11.94,Propulsion,Redshift,Summer I 2022
+BLAST SHIELD,Hot fire,Pretty Important,HOME DEPOT,174.00,1,174.00,Propulsion,Redshift,Summer I 2022
+BLAST SHIELD,hot fire protection,Pretty Important,HOME DEPOT,174.00,1,174.00,Propulsion,Redshift,Summer II 2022
+KERO SPILL ABSORBENT,hotfire kero cleanup,Pretty Important,GRAINGER,7.17,4,28.68,Propulsion,Redshift,Spring 2023
+KERO SPILL ABSORBENT,hotfire kero cleanup,Necessary for Any Progress,GRAINGER,7.17,4,28.68,Propulsion,Redshift,Fall 2022
+304 SS STOCK,injector reconstruction,Necessary for Any Progress,MCMASTER,70.03,1,70.03,Propulsion,Redshift,Fall 2022
+INSULATION,Insulation,Pretty Important,MCMASTER,16.44,2,32.88,Propulsion,Redshift,Summer I 2022
+PNEUMATIC PISTON,Internal Marman Clamp / General Research,Pretty Important,MCMASTER,105.87,1,105.87,Internal Mech,Redshift,Fall 2022
+PNEUMATIC PISTON,Internal Marman Clamp / General Research,Pretty Important,MCMASTER,105.87,1,105.87,Internal Mech,Redshift,Summer I 2022
+MOTOR (STARSHIP),L3150-Vmax,Pretty Important,MOTOR JOE,351.00,1,351.00,Starship,Redshift,Spring 2023
+THUMB DRIVES 128GB,Local file transfer and storage,Necessary for Any Progress,AMAZON,13.98,6,83.88,Sims,Redshift,Fall 2022
+AEROTECH 98/5120 HARDWARE PACK,Mark 1 Motor Casing + hardware,Necessary for Any Progress,CHRIS'S ROCKETRY,555.19,1,555.19,Airframe,Redshift,Fall 2022
+AEROTECH 98/5120 HARDWARE PACK,Mark 1 Motor Casing + hardware,Pretty Important,CHRIS'S ROCKETRY,555.19,0,0.00,Airframe,Redshift,Summer II 2022
+AEROTECH 98/5120 HARDWARE PACK,Mark 1 Motor Casing + hardware,Pretty Important,CHRIS'S ROCKETRY,555.19,1,555.19,Airframe,Redshift,Summer I 2022
+AEROTECH L2500ST-P 98MM/5120,Mark 1 Subsonic Motor,Necessary for Any Progress,CHRIS'S ROCKETRY,366.00,1,366.00,Airframe,Redshift,Fall 2022
+AEROTECH L2500ST-P 98MM/5120,Mark 1 Subsonic Motor,Pretty Important,CHRIS'S ROCKETRY,366.00,0,0.00,Airframe,Redshift,Summer II 2022
+AEROTECH L2500ST-P 98MM/5120,Mark 1 Subsonic Motor,Pretty Important,CHRIS'S ROCKETRY,366.00,1,366.00,Airframe,Redshift,Summer I 2022
+WIND TUNNEL SETUP HARDWARE AND ELECTRONICS,McMaster,Pretty Important,,30.00,1,30.00,Sims,Redshift,Fall 2022
+"1/4""-20 X 6' STEEL THREADED ROD",MK1 Motor Section,Necessary for Any Progress,MCMASTER,8.76,3,26.28,Airframe,Redshift,Fall 2022
+98 MM X 4' FIBERGLASS TUBE,MK1 Motor Section,Necessary for Any Progress,APOGEE ROCKETS,115.50,1,115.50,Airframe,Redshift,Summer I 2022
+"1/4""-20 X 6' STEEL THREADED ROD",MK1 Motor Section,Necessary for Any Progress,MCMASTER,8.76,1,8.76,Airframe,Redshift,Summer I 2022
+"3/8"" OD ALUMINUM TUBE",MK1 Motor Section Support,Necessary for Any Progress,MCMASTER,48.86,3,146.58,Airframe,Redshift,Fall 2022
+"3/8"" OD ALUMINUM TUBE",MK1 Motor Section Support,Necessary for Any Progress,MCMASTER,48.86,1,48.86,Airframe,Redshift,Summer I 2022
+CARBON FIBRE TRANSITION SECTION,MK1 Transition Section,Not necessary,UNKNOWN,500.00,1,500.00,Airframe,Redshift,Fall 2022
+AT F50-6T,Motors for christmass tree project,Pretty Important,WILDMAN,36.00,4,144.00,Avionics,Redshift,Spring 2023
+INTERNAL MARMAN CLAMP CNC COMPONENTS,"Not designed yet, based on similar past LTC jobs",Necessary for Any Progress,LTC PROTO,713.00,1,713.00,Internal Mech,Redshift,Fall 2022
+LOX LINE DISCONNECT MACHINED PARTS,"Not designed yet, based on similar past LTC jobs",Pretty Important,LTC PROTO,400.00,1,400.00,Internal Mech,Redshift,Fall 2022
+MK1 MARMAN CLAMP CNC PARTS,"Not designed yet, based on similar past LTC jobs",Pretty Important,LTC PROTO,713.00,1,713.00,Internal Mech,Redshift,Fall 2022
+INTERNAL MARMAN CLAMP CNC COMPONENTS,"Not fully designed yet, based on similar past LTC jobs",Necessary for Any Progress,LTC PROTO,713.00,1,713.00,Internal Mech,Redshift,Spring 2023
+BREAKOUT BOARDS WITH ADCS,oops the adcs don't work,Necessary for Any Progress,AMAZON,38.22,1,38.22,Propulsion,Redshift,Summer II 2022
+LOX,oxidizer for hot-fire,Necessary for Any Progress,PRAXAIR,200.00,1,200.00,Propulsion,Redshift,Summer II 2022
+-04 SECO SEALS,pack of 50,Necessary for Any Progress,SECO,71.23,1,71.23,Propulsion,Redshift,Spring 2023
+-08 SECO SEALS,pack of 50,Necessary for Any Progress,SECO,82.47,1,82.47,Propulsion,Redshift,Spring 2023
+-04 SECO SEALS,pack of 50,Necessary for Any Progress,SECO,71.23,1,71.23,Propulsion,Redshift,Fall 2022
+-08 SECO SEALS,pack of 50,Necessary for Any Progress,SECO,82.47,1,82.47,Propulsion,Redshift,Fall 2022
+KERVENT SOLENOID,pneumatic double acting solenoid,Pretty Important,GRANGIER,202.80,1,202.80,Propulsion,Redshift,Spring 2023
+KERVENT SOLENOID,pneumatic double acting solenoid,Necessary for Any Progress,GRANGIER,202.80,1,202.80,Propulsion,Redshift,Fall 2022
+LOX,Propulsionellant dewar for hotfire,Necessary for Any Progress,MEDTECH,296.96,1,296.96,Propulsion,Redshift,Spring 2023
+LOX,Propulsionellant dewar for hotfire,Necessary for Any Progress,MEDTECH,296.96,1,296.96,Propulsion,Redshift,Fall 2022
+KERO,Propulsionellant for hotfire,Necessary for Any Progress,HOME DEPOT,35.00,2,70.00,Propulsion,Redshift,Spring 2023
+KERO,Propulsionellant for hotfire,Pretty Important,HOME DEPOT,35.00,2,70.00,Propulsion,Redshift,Fall 2022
+TARP (12' X 16' ),rain protection for test stand,Necessary for Any Progress,HOME DEPOT,31.58,1,31.58,Propulsion,Redshift,Summer II 2022
+MK1 SECOND MOTOR,second Motor for Mk1 (unclear what size - hopefully L3),Necessary for Any Progress,WILDMAN,400.00,1,400.00,Airframe,Redshift,Spring 2023
+FIN CAN (STARSHIP),Sheet metal,Pretty Important,XOMETRY,400.00,1,400.00,Starship,Redshift,Spring 2023
+SECO SEALS,"SS crush seals (-08), emailed quote, packet of 50",Pretty Important,SECO SEALS,70.00,1,70.00,Propulsion,Redshift,Summer II 2022
+FIBER GLASS,stock,Necessary for Any Progress,MCMASTER,100.00,1,100.00,Airframe,Redshift,Spring 2023
+SSD 2TB,Storage for archive of simulation files,Pretty Important,AMAZON,152.99,1,152.99,Sims,Redshift,Fall 2022
+KERINLET DUCER HOSE,teflon hose for kero inlet ducer,Pretty Important,FLEXLINE,55.95,1,55.95,Propulsion,Redshift,Spring 2023
+KERINLET DUCER HOSE,teflon hose for kero inlet ducer,Necessary for Any Progress,FLEXLINE,55.95,1,55.95,Propulsion,Redshift,Fall 2022
+ELECTRONICS SHENANIGANS,"the adcs on the test stand died, not sure what it will take to fix them",Necessary for Any Progress,N/A,50.00,1,50.00,Propulsion,Redshift,Summer II 2022
+SHIPPING,to account for shipping,Pretty Important,,60.00,1,60.00,Propulsion,Redshift,Summer II 2022
+UHAUL,transport,Necessary for Any Progress,UHAUL,300.00,1,300.00,Propulsion,Redshift,Spring 2023
+UHAUL,transport,Necessary for Any Progress,UHAUL,300.00,1,300.00,Propulsion,Redshift,Fall 2022
+CESARONI K1440,TRD Motor,Pretty Important,CHRIS'S ROCKETRY,196.26,1,196.26,Airframe,Redshift,Fall 2022
+CESARONI K1440,TRD Motor,Pretty Important,CHRIS'S ROCKETRY,196.26,0,0.00,Airframe,Redshift,Summer II 2022
+CESARONI K1440,TRD Motor,Pretty Important,CHRIS'S ROCKETRY,196.26,1,196.26,Airframe,Redshift,Summer I 2022
+ASSORTED NUTS AND BOLTS,unforseen circumstances,Pretty Important,MCMASTER,50.00,1,50.00,Propulsion,Redshift,Fall 2022
+BATTERY CHARGER/PDB ICS,Vertical test stand/MK2 avionics,Necessary for Any Progress,DIGIKEY/MOUSER,100.00,1,100.00,Avionics,Redshift,Summer I 2022
+PROPULSION CONTROL BOARD ICS/PASSIVES,Vertical test stand/MK2 avionics,Necessary for Any Progress,DIGIKEY/MOUSER,75.00,1,75.00,Avionics,Redshift,Summer I 2022
+PCBS FOR PROPULSION,Vertical test stand/MK2 avionics,Pretty Important,JLCPCB,60.00,1,60.00,Avionics,Redshift,Summer I 2022
+ANEMOMETER,wind tunnel velocity measurement,Pretty Important,GRAINGER,156.53,1,156.53,Sims,Redshift,Fall 2022
+ASSORTED BOLTS AND STOCK,,Pretty Important,MCMASTER,150.00,1,150.00,Propulsion,Redshift,Spring 2023
+SHIPPING,,,,100.00,1,100.00,Propulsion,Redshift,Spring 2023
+GROUNDSTATION PCBS,,Necessary for Any Progress,JLC,100.00,1,100.00,Avionics,Redshift,Spring 2023
+GROUNDSTATION ELECTRONICS,,Necessary for Any Progress,DIGIKEY,40.00,5,200.00,Avionics,Redshift,Spring 2023
+FCB V2 PCBS AND COMPONENTS,,Necessary for Any Progress,"JLC, DIGIKEY",160.00,10,1600.00,Avionics,Redshift,Spring 2023
+BLUETOOTH ARMING SWITCH PCBS,,Not necessary,JLC,50.00,1,50.00,Avionics,Redshift,Spring 2023
+DAQ V4 PCB,,Not necessary,JLCPCB,45.00,1,45.00,Avionics,Redshift,Spring 2023
+DAQ V4 COMPONENTS,,Not necessary,DIGIKEY,200.00,1,200.00,Avionics,Redshift,Spring 2023
+PROPULSION SOLENOID BOARD PCBS,,Necessary for Any Progress,JLC,100.00,1,100.00,Avionics,Redshift,Spring 2023
+PROPULSION SOLENOID BOARD COMPONENTS,,Necessary for Any Progress,DIGIKEY,40.00,3,120.00,Avionics,Redshift,Spring 2023
+RADIO + GPS BOARD PROJECT CONTINUATION,,Pretty Important,"JLCPCB, DIGIKEY",200.00,1,200.00,Avionics,Redshift,Spring 2023
+NOSE CONE (2 STAGE),,Necessary for Any Progress,COMPOSITE WAREHOUSE,80.00,1,80.00,Airframe,Redshift,Spring 2023
+HAZMAT SHIPPING,,Pretty Important,CHRIS'S ROCKETRY,69.99,1,69.99,Airframe,Redshift,Fall 2022
+TRANSITION FOAM,,Necessary for Any Progress,HOME DEPOT,19.55,1,19.55,Airframe,Redshift,Fall 2022
+AMAZON SHIPPING,,Necessary for Any Progress,,10.00,1,10.00,Sims,Redshift,Fall 2022
+SHIPPING,,Necessary for Any Progress,,100.00,1,100.00,Propulsion,Redshift,Fall 2022
+HARD DRIVE CABLE,,Necessary for Any Progress,AMAZON,7.49,1,7.49,Sims,Redshift,Summer II 2022
+"AMAZON, DIGIKEY, MCMASTER SHIPPING",,Necessary for Any Progress,"AMAZON, DIGIKEY, MCMASTER",25.00,1,25.00,Sims,Redshift,Summer II 2022
+PROPULSION CONTROL BOARD PARTS,,Necessary for Any Progress,,200.00,1,200.00,Avionics,Redshift,Summer II 2022
+PROPULSION PCBS,,Pretty Important,,85.00,1,85.00,Avionics,Redshift,Summer II 2022
+BLE ARMING SWITCH PARTS,,Pretty Important,,50.00,1,50.00,Avionics,Redshift,Summer II 2022
+DAQ PARTS,,Not necessary,,,1,0.00,Avionics,Redshift,Summer II 2022
+ANTENNAS/RF TROUBLESHOOTING FOR FCBV0,,Not necessary,,$50.00 ,1,50.00,Avionics,Redshift,Summer II 2022
+3/8 FLAT MILL,,Necessary for Any Progress,MCMASTER,$26.34 ,1,26.34,Internal Mech,Redshift,Summer II 2022
+1/2 FLAT MILL,,Necessary for Any Progress,MCMASTER,$44.30 ,1,44.30,Infernal Mech,Redshift,Summer II 2022
+HAZMAT SHIPPING,,Necessary for Any Progress,CHRIS'S ROCKETRY,$69.99 ,1,69.99,Airframe,Redshift,Summer II 2022
+TRANSITION FOAM,,Necessary for Any Progress,HOME DEPOT,$19.55 ,1,19.55,Airframe,Redshift,Summer II 2022
+HAZMAT SHIPPING,,Necessary for Any Progress,CHRIS'S ROCKETRY,$69.99 ,1,69.99,Airframe,Redshift,Summer I 2022
+TRANSITION FOAM,,Necessary for Any Progress,HOME DEPOT,$19.55 ,1,19.55,Airframe,Redshift,Summer I 2022
