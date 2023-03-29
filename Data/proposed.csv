@@ -133,10 +133,10 @@ WIND TUNNEL SETUP HARDWARE AND ELECTRONICS,McMaster,Pretty Important,,30.00,1,30
 "3/8"" OD ALUMINUM TUBE",MK1 Motor Section Support,Necessary for Any Progress,MCMASTER,48.86,1,48.86,Airframe,Redshift,Summer I 2022
 CARBON FIBRE TRANSITION SECTION,MK1 Transition Section,Not necessary,UNKNOWN,500.00,1,500.00,Airframe,Redshift,Fall 2022
 AT F50-6T,Motors for christmass tree project,Pretty Important,WILDMAN,36.00,4,144.00,Avionics,Redshift,Spring 2023
-INTERNAL MARMAN CLAMP CNC COMPONENTS,"Not designed yet, based on similar past LTC jobs",Necessary for Any Progress,LTC PROTO,713.00,1,713.00,Internal Mech,Redshift,Fall 2022
+INT. MARMAN CLAMP CNC COMPONENTS,"Not designed yet, based on similar past LTC jobs",Necessary for Any Progress,LTC PROTO,713.00,1,713.00,Internal Mech,Redshift,Fall 2022
 LOX LINE DISCONNECT MACHINED PARTS,"Not designed yet, based on similar past LTC jobs",Pretty Important,LTC PROTO,400.00,1,400.00,Internal Mech,Redshift,Fall 2022
 MK1 MARMAN CLAMP CNC PARTS,"Not designed yet, based on similar past LTC jobs",Pretty Important,LTC PROTO,713.00,1,713.00,Internal Mech,Redshift,Fall 2022
-INTERNAL MARMAN CLAMP CNC COMPONENTS,"Not fully designed yet, based on similar past LTC jobs",Necessary for Any Progress,LTC PROTO,713.00,1,713.00,Internal Mech,Redshift,Spring 2023
+INT. MARMAN CLAMP CNC COMPONENTS,"Not fully designed yet, based on similar past LTC jobs",Necessary for Any Progress,LTC PROTO,713.00,1,713.00,Internal Mech,Redshift,Spring 2023
 BREAKOUT BOARDS WITH ADCS,oops the adcs don't work,Necessary for Any Progress,AMAZON,38.22,1,38.22,Propulsion,Redshift,Summer II 2022
 LOX,oxidizer for hot-fire,Necessary for Any Progress,PRAXAIR,200.00,1,200.00,Propulsion,Redshift,Summer II 2022
 -04 SECO SEALS,pack of 50,Necessary for Any Progress,SECO,71.23,1,71.23,Propulsion,Redshift,Spring 2023
@@ -177,8 +177,8 @@ FCB V2 PCBS AND COMPONENTS,,Necessary for Any Progress,"JLC, DIGIKEY",160.00,10,
 BLUETOOTH ARMING SWITCH PCBS,,Not necessary,JLC,50.00,1,50.00,Avionics,Redshift,Spring 2023
 DAQ V4 PCB,,Not necessary,JLCPCB,45.00,1,45.00,Avionics,Redshift,Spring 2023
 DAQ V4 COMPONENTS,,Not necessary,DIGIKEY,200.00,1,200.00,Avionics,Redshift,Spring 2023
-PROPULSION SOLENOID BOARD PCBS,,Necessary for Any Progress,JLC,100.00,1,100.00,Avionics,Redshift,Spring 2023
-PROPULSION SOLENOID BOARD COMPONENTS,,Necessary for Any Progress,DIGIKEY,40.00,3,120.00,Avionics,Redshift,Spring 2023
+PROP. SOLENOID BOARD PCBS,,Necessary for Any Progress,JLC,100.00,1,100.00,Avionics,Redshift,Spring 2023
+PROP. SOLENOID BOARD COMPONENTS,,Necessary for Any Progress,DIGIKEY,40.00,3,120.00,Avionics,Redshift,Spring 2023
 RADIO + GPS BOARD CONTINUATION,,Pretty Important,"JLCPCB, DIGIKEY",200.00,1,200.00,Avionics,Redshift,Spring 2023
 NOSE CONE (2 STAGE),,Necessary for Any Progress,COMPOSITE WAREHOUSE,80.00,1,80.00,Airframe,Redshift,Spring 2023
 HAZMAT SHIPPING,,Pretty Important,CHRIS'S ROCKETRY,69.99,1,69.99,Airframe,Redshift,Fall 2022
@@ -191,7 +191,7 @@ PROPULSION CONTROL BOARD PARTS,,Necessary for Any Progress,,200.00,1,200.00,Avio
 PROPULSION PCBS,,Pretty Important,,85.00,1,85.00,Avionics,Redshift,Summer II 2022
 BLE ARMING SWITCH PARTS,,Pretty Important,,50.00,1,50.00,Avionics,Redshift,Summer II 2022
 DAQ PARTS,,Not necessary,,0.00,1,0.00,Avionics,Redshift,Summer II 2022
-ANTENNAS/RF TROUBLESHOOTING FOR FCBV0,,Not necessary,,50.00 ,1,50.00,Avionics,Redshift,Summer II 2022
+ANTENNAS/RF TROUBLESHOOTING,FOR FCBV0,Not necessary,,50.00 ,1,50.00,Avionics,Redshift,Summer II 2022
 3/8 FLAT MILL,,Necessary for Any Progress,MCMASTER,26.34 ,1,26.34,Internal Mech,Redshift,Summer II 2022
 1/2 FLAT MILL,,Necessary for Any Progress,MCMASTER,44.30 ,1,44.30,Infernal Mech,Redshift,Summer II 2022
 HAZMAT SHIPPING,,Necessary for Any Progress,CHRIS'S ROCKETRY,69.99 ,1,69.99,Airframe,Redshift,Summer II 2022
