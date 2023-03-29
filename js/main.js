@@ -206,8 +206,8 @@ launch_data.then((data) => {
 
   function handleMousemove(event, d) {  
     TOOLTIP.html('Item: ' + d.Item + '<br>Launch Date: ' + d.Launch_Date + '<br>Amount Broken: ' + d.Number_Broken + '<br>Total Cost: ' + d.Cost)
-      .style('left', (event.pageX + 50) + 'px')
-      .style('top', (event.pageY + 50) + 'px'); 
+      .style('left', (event.pageX + 20) + 'px')
+      .style('top', (event.pageY + 20) + 'px'); 
   }
 
   function handleMouseleave(event, d) {  
@@ -362,8 +362,8 @@ proposed_data.then((data) => {
   };
   function handleMousemove(event, d) {  
     TOOLTIP.html('Item: ' + d.Item + '<br>Semester: ' + d.Semester + '<br>Price: ' + d.Price + '<br>Quantity: ' + d.Quantity + '<br>Total Cost: ' + d.Cost + '<br>Importance: ' + d.Importance + '<br>Vendor: ' + d.Vendor + '<br>Description: ' + d.Description)
-      .style('left', (event.pageX + 50) + 'px')
-      .style('top', (event.pageY + 50) + 'px'); 
+      .style('left', (event.pageX + 20) + 'px')
+      .style('top', (event.pageY + 20) + 'px'); 
   };
   function handleMouseleave(event, d) {  
     TOOLTIP.style('opacity', 0);
