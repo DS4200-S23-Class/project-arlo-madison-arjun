@@ -1,4 +1,4 @@
-﻿Column1,Description,Importance,Vendor,Price,Quantity,Cost,Subgroup,Group,Semester
+﻿Item,Description,Importance,Vendor,Price,Quantity,Cost,Subgroup,Group,Semester
 UHMWPE CORD,0.8 mm,Pretty Important,AMAZON,12.95,3,38.85,Internal Mech,Redshift,Spring 2023
 UHMWPE CORD,0.8 mm,Pretty Important,AMAZON,12.95,3,38.85,Internal Mech,Redshift,Fall 2022
 MA OUTPUT DUCERS,0-1000 psi 4-20mA ducers,Necessary for Any Progress,GRAINGER,469.35,2,938.70,Propulsion,Redshift,Spring 2023
