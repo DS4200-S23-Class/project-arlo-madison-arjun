@@ -1,7 +1,7 @@
 // define constant frame dimensions
 const FRAME_HEIGHT = 500;
-const FRAME_WIDTH = 600;
-const MARGINS = {left: 50, right: 25, top: 20, bottom: 160};
+const FRAME_WIDTH = 650;
+const MARGINS = {left: 50, right: 25, top: 20, bottom: 100};
 const VIS_HEIGHT = FRAME_HEIGHT - MARGINS.top - MARGINS.bottom;
 const VIS_WIDTH = FRAME_WIDTH - MARGINS.left - MARGINS.right;
 
@@ -439,7 +439,7 @@ proposed_data.then((data) => {
     .enter()
       .append('rect')
       .attr('x', (d) => {
-        return (xscaleAv(d.Item) + MARGINS.left + 10)
+        return (xscaleAv(d.Item) + MARGINS.left + 7)
       })
       .attr('y', (d) => {
         return (MARGINS.top + (yscaleAv(d.Price)))
@@ -621,13 +621,13 @@ proposed_data.then((data) => {
 	gProp.append('g')
     .attr('transform', 'translate(' + MARGINS.left + ',' + (MARGINS.top + VIS_HEIGHT) +')')
     .call(d3.axisBottom(xscaleProp))
-    .attr('font-size', '10px')
+    .attr('font-size', '8px')
     .selectAll('text')	
             .style('text-anchor', 'end')
             .attr('dx', '-.8em')
             .attr('dy', '.15em')
             .attr('transform', function(d) {
-                return 'rotate(-35)' 
+                return 'rotate(-50)' 
                 });
   gProp.append('g')
     .attr('transform', 'translate(' + MARGINS.left + ',' + MARGINS.top +')')
@@ -774,7 +774,7 @@ proposed_data.then((data) => {
       .attr('height', (d) => {
         return (VIS_HEIGHT - yscaleStar(d.Price))
       })
-      .attr('width', '15px')
+      .attr('width', '25px')
       .attr('class', 'starBar');
 
   // initialize tooltip
