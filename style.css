@@ -38,7 +38,7 @@ ul {
 }
 
 .hidden {
-    visibility: hidden;
+    visibility: collapse;
 }
 
 .tooltip {
@@ -50,3 +50,23 @@ ul {
     padding: 5px;
     font-size: small;
   }
+
+.airframeBar {
+    fill:rgb(43, 150, 244)
+}
+
+.avBar {
+    fill:rgb(111, 2, 144)
+}
+
+.InBar {
+    fill:rgb(219, 26, 94)
+}
+
+.propBar {
+    fill:rgb(6, 132, 88)
+}
+
+.starBar {
+    fill:rgb(238, 157, 6)
+}
