@@ -1,7 +1,7 @@
 // define constant frame dimensions
 const FRAME_HEIGHT = 550;
 const FRAME_WIDTH = 700;
-const MARGINS = {left: 60, right: 45, top: 30, bottom: 100};
+const MARGINS = {left: 60, right: 45, top: 30, bottom: 85};
 const VIS_HEIGHT = FRAME_HEIGHT - MARGINS.top - MARGINS.bottom;
 const VIS_WIDTH = FRAME_WIDTH - MARGINS.left - MARGINS.right;
 
@@ -697,12 +697,13 @@ launch_data.then((data) => {
     .attr('y', MARGINS.top / 2)
     .attr('text-anchor', 'middle')
     .attr('class', 'header')
+    .attr('font-size', '20px')
     .text('Damages During Launch');
 
     FRAME4.append('text')
     .attr('transform', 'translate(' + MARGINS.left + ')')
     .attr('x', MARGINS.left + VIS_WIDTH/2)
-    .attr('y', MARGINS.top + VIS_HEIGHT + 85)
+    .attr('y', MARGINS.top + VIS_HEIGHT + 90)
     .attr('text-anchor', 'middle')
     .attr('class', 'header')
     .attr('font-size', '16px')
