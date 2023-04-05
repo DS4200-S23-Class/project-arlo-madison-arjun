@@ -226,7 +226,7 @@ totals_data.then((data) => {
       .attr('cy', (d) => {
         return (yscaleTime(d.Total) + MARGINS.top)
       })
-      .attr('r', 5)
+      .attr('r', 4)
       .attr('class', 'propPoint point');
     gTime.selectAll('points')
       .data(recTimeTotals)
@@ -238,8 +238,28 @@ totals_data.then((data) => {
         .attr('cy', (d) => {
           return (yscaleTime(d.Total) + MARGINS.top)
         })
-        .attr('r', 5)
+        .attr('r', 4)
         .attr('class', 'recPoint point');
+
+  // add lines
+  gTime.append("path")
+    .datum(propTimeTotals)
+    .attr("fill", "none")
+    .attr("stroke", "rgb(60, 111, 187)")
+    .attr("stroke-width", 2)
+    .attr("d", d3.line()
+      .x(function(d) { return xscaleTime(d.Area.split(' ')[1]) + MARGINS.left + 10})
+      .y(function(d) { return yscaleTime(d.Total) + MARGINS.top})
+      )
+  gTime.append("path")
+    .datum(recTimeTotals)
+    .attr("fill", "none")
+    .attr("stroke", "rgb(118, 176, 154)")
+    .attr("stroke-width", 2)
+    .attr("d", d3.line()
+      .x(function(d) { return xscaleTime(d.Area.split(' ')[1]) + MARGINS.left + 10})
+      .y(function(d) { return yscaleTime(d.Total) + MARGINS.top})
+      )
 
   // initialize tooltip
   const TOOLTIPTIME = d3.select('.timeVis')
@@ -252,7 +272,7 @@ totals_data.then((data) => {
     TOOLTIPTIME.style('opacity', 1);
     d3.select(this)
       .style('stroke', 'black')
-      .style('stroke-width', '1px');
+      .style('stroke-width', '2px');
   };
   function handleMousemoveTime(event, d) {  
     TOOLTIPTIME.html(d.Area + '<br>Total Purchases: $' + d.Total)
