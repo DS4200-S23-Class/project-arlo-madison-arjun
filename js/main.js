@@ -243,12 +243,12 @@ totals_data.then((data) => {
   gTime.append('circle')
         .attr('cx', MARGINS.left + 80)
         .attr('cy', MARGINS.top + 45)
-        .attr('r', 3)
+        .attr('r', 4)
         .attr('class', 'propPoint');
   gTime.append('circle')
         .attr('cx', MARGINS.left + 80)
         .attr('cy', MARGINS.top + 65)
-        .attr('r', 3)
+        .attr('r', 4)
         .attr('class', 'recPoint');
 
   // add points
@@ -262,7 +262,7 @@ totals_data.then((data) => {
       .attr('cy', (d) => {
         return (yscaleTime(d.Total) + MARGINS.top)
       })
-      .attr('r', 4)
+      .attr('r', 5)
       .attr('class', 'propPoint point');
     gTime.selectAll('points')
       .data(recTimeTotals)
@@ -274,7 +274,7 @@ totals_data.then((data) => {
         .attr('cy', (d) => {
           return (yscaleTime(d.Total) + MARGINS.top)
         })
-        .attr('r', 4)
+        .attr('r', 5)
         .attr('class', 'recPoint point');
 
   // add lines
@@ -282,7 +282,7 @@ totals_data.then((data) => {
     .datum(propTimeTotals)
     .attr("fill", "none")
     .attr("stroke", "rgb(60, 111, 187)")
-    .attr("stroke-width", 2)
+    .attr("stroke-width", 3)
     .attr("d", d3.line()
       .x(function(d) { return xscaleTime(d.Area.split(' ')[1]) + MARGINS.left + 10})
       .y(function(d) { return yscaleTime(d.Total) + MARGINS.top})
@@ -291,7 +291,7 @@ totals_data.then((data) => {
     .datum(recTimeTotals)
     .attr("fill", "none")
     .attr("stroke", "rgb(118, 176, 154)")
-    .attr("stroke-width", 2)
+    .attr("stroke-width", 3)
     .attr("d", d3.line()
       .x(function(d) { return xscaleTime(d.Area.split(' ')[1]) + MARGINS.left + 10})
       .y(function(d) { return yscaleTime(d.Total) + MARGINS.top})
