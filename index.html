@@ -20,40 +20,41 @@
 <body>
     <h1> Northeastern Aerospace Budgeting Dashboard</h1>
 
-    <div>
+    <div class = "container2">
         <h2> Motivation </h2>
         <p> 
-            For our project, we decided to build a budgeting dashboard to help the Northeastern (NU) Aerospace Club record and understand their spending over multiple semesters. 
+            We built a budgeting dashboard to help the Northeastern (NU) Aerospace Club record and understand their spending over multiple semesters. 
             The NU Aerospace Club is a Northeastern funded, student-run organization that gives students interested in engineering and aerospace the chance to design and build rockets and planes, and more.
-            As it is student-run, it is up to the club's e-board to decide how the provided money will be distributed throughout the club, which can be a daunting task.
-            Our dashboard aims to provide a multi-level view of expenditures within the club to allow budget exploration for e-board members and students proposing budgets for their respective teams. 
+            It is up to the club's e-board to decide how the provided money will be distributed throughout the club, which can be a daunting task and has significant implications on the club's success and longevity.
+        </p> 
+
+        <p> Our dashboard aims to provide a multi-level view of expenditures within the club to allow budget exploration for e-board members and students proposing budgets for their respective teams. 
             This will enable them to compare budgets over time, spending across different teams, as well as examine an overall view of their available budget. 
             As a student-run organization with limited funds, it is crucial for the club to be able to allocate those funds wisely and monitor their spendings. 
             This tool will ideally provide the club leaders with the means to make easier and more educated decisions when splitting money across the various subdivisions of their club.  
         </p>
     </div>
 
-    <div>
+    <div class = "container2">
         <h2> Data </h2>
         <p> 
             Our <a href="data.xlsx"> data</a> is a manually compiled set of individual expenditure reports from each semester over the past year, as recorded by the NU Aerospace Club's e-board. 
             It contains information regarding both proposed semester budgets, as well as actual recorded costs per semester, detailing purchase costs, importance, and the team requesting the purchase. 
-            In addition, it contains unexpected costs, such as data about rocket parts damaged during launches.
-            One evident bias to note within the data is the "importance" column. 
-            This column is dictated by the individual who needs the particular item, so it is rare to see a "Not Necessary" recorded in the data. The person requesting the item would typically consider their own request of high importance even if it is actually less so compared to those in other areas of the club. 
+            In addition, it contains unexpected costs, such as data about rocket parts damaged during launches. 
+
+        </p>
+        <p> One evident bias to note within the data is the "importance" column. 
+            This column is dictated by the individual who needs the particular item, so it is rare to see the level as importanced declared as "Not Necessary" recorded in the data. The person requesting the item would typically consider their own request of high importance even if it is actually less so compared to those in other areas of the club. 
             There were minor data qulaity issues present, like inconsistencies in spelling and capitalization. 
             These were standardized within the sheet during the data cleaning process.
             Additionally, the club reported only its informal recorded purchases, which does not include every single purchase made within the semester. 
             It includes mostly purchases which students made on behalf of the club, which then needed to be reimbursed. 
-            Thus, the data on actual purchases provides a subset of the total purchases, which we are assuming to be generally representative of all purchases made. 
+            Thus, the data on actual purchases acts as a subset, which we are assuming to be generally representative of all purchases made. 
         </p>
     </div>
 
     <div>
-        <h2> Visualization </h2>
-        Note for pm-03: Redshift must be checked for completed vis to show (part of intended functionality)
-        Note for pm-04: Subgroup/semester filters must be checked fro vis to show, as part of intended functionality. Eventually this will be linked to another graph.
-        <h3> NU Aerospace Budget exploration </h3>
+        <h2> NU Aerospace Budget Exploration </h2>
 
         <div class= "vis1"> </div>
         <div class="container">

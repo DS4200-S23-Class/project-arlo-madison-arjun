@@ -15,7 +15,13 @@ h3 {
 }
 
 p {
-    text-align: center;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 24px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-indent: 25px;
 }
 
 ul {
@@ -29,6 +35,10 @@ ul {
     flex-wrap: nowrap;
 }
 
+.container2 {
+    margin: auto;
+    width: 75%;
+}
 .subgroupVis {
     width: 50%;
 }
