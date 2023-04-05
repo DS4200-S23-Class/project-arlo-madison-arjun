@@ -215,6 +215,42 @@ totals_data.then((data) => {
   .attr('font-size', '13px')
   .text('Total Cost');
 
+  // add legend
+  TIMEVIS.append('text')
+  .attr('transform', 'translate(' + (MARGINS.left - 8) + ')')
+  .attr('x', MARGINS.left + 50)
+  .attr('y', MARGINS.top + 80)
+  .attr('text-anchor', 'middle')
+  .attr('class', 'header')
+  .attr('font-size', '14px')
+  .text('Proposed');
+  TIMEVIS.append('text')
+  .attr('transform', 'translate(' + (MARGINS.left - 8) + ')')
+  .attr('x', MARGINS.left + 50)
+  .attr('y', MARGINS.top + 100)
+  .attr('text-anchor', 'middle')
+  .attr('class', 'header')
+  .attr('font-size', '14px')
+  .text('Recorded');
+  TIMEVIS.append('text')
+  .attr('transform', 'translate(' + (MARGINS.left - 8) + ')')
+  .attr('x', MARGINS.left + 50)
+  .attr('y', MARGINS.top + 60)
+  .attr('text-anchor', 'middle')
+  .attr('class', 'header')
+  .attr('font-size', '15px')
+  .text('Legend');
+  gTime.append('circle')
+        .attr('cx', MARGINS.left + 80)
+        .attr('cy', MARGINS.top + 45)
+        .attr('r', 3)
+        .attr('class', 'propPoint');
+  gTime.append('circle')
+        .attr('cx', MARGINS.left + 80)
+        .attr('cy', MARGINS.top + 65)
+        .attr('r', 3)
+        .attr('class', 'recPoint');
+
   // add points
   gTime.selectAll('points')
     .data(propTimeTotals)
@@ -694,7 +730,8 @@ launch_data.then((data) => {
       })
       .attr('fill', 'red')
       .attr('opacity', '65%')
-      .text('X')
+      .text('x')
+      .attr('font-size', '30px')
       .attr('font-weight', 'bold')
       .attr('class', 'damage');
 
