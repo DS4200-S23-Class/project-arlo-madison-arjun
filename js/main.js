@@ -68,7 +68,7 @@ totals_data.then((data) => {
     .attr('y', MARGINS.top)
     .attr('text-anchor', 'middle')
     .attr('class', 'header')
-    .text('Overview of Spending');
+    .text('Overview of Spending By Team');
   FRAME1.append('text')
     .attr('transform', 'translate(' + MARGINS.left + ')')
     .attr('x', MARGINS.left + (VIS_WIDTH/2))
@@ -197,7 +197,7 @@ totals_data.then((data) => {
   .attr('y', MARGINS.top)
   .attr('text-anchor', 'middle')
   .attr('class', 'header')
-  .text('Proposed and Recorded Spending Over a Year');
+  .text('Proposed and Recorded Spending Over a Year (All Teams)');
   TIMEVIS.append('text')
   .attr('transform', 'translate(' + MARGINS.left + ')')
   .attr('x', (VIS_WIDTH/2))
@@ -356,7 +356,7 @@ function buildSubgroupVis(subgroupName) {
       .attr('y', MARGINS.top + VIS_HEIGHT/2)
       .attr('text-anchor', 'middle')
       .attr('class', 'header')
-      .attr('font-size', '13px')
+      .attr('font-size', '16px')
       .text('Item Cost');
 
     // initialize tooltip
@@ -669,7 +669,7 @@ launch_data.then((data) => {
     .attr('y', MARGINS.top + VIS_HEIGHT + 85)
     .attr('text-anchor', 'middle')
     .attr('class', 'header')
-    .attr('font-size', '13px')
+    .attr('font-size', '16px')
     .text('Launch Date');
 
     FRAME4.append('text')
@@ -678,7 +678,7 @@ launch_data.then((data) => {
     .attr('y', MARGINS.top + VIS_HEIGHT/2)
     .attr('text-anchor', 'middle')
     .attr('class', 'header')
-    .attr('font-size', '13px')
+    .attr('font-size', '16px')
     .text('Repair Cost');
 
   // plotting points onto frame with size and positional attributes
