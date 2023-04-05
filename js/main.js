@@ -35,7 +35,7 @@ totals_data.then((data) => {
   // create scaling functions
   let xscale = d3.scaleBand()
     .domain(recordedTotals.map((d) =>
-      {return d.Area;}))
+      {return d.Area.split(' ')[1];}))
 		.range([0, VIS_WIDTH - 19])
 		.padding(0.4);
   let yscale = d3.scaleLinear()
@@ -48,7 +48,7 @@ totals_data.then((data) => {
 	g.append('g')
     .attr('transform', 'translate(' + MARGINS.left + ',' + (MARGINS.top + VIS_HEIGHT) +')')
     .call(d3.axisBottom(xscale))
-    .attr('font-size', '11px')
+    .attr('font-size', '13px')
     .selectAll('text')	
       .style('text-anchor', 'end')
       .attr('dx', '-.8em')
@@ -68,7 +68,7 @@ totals_data.then((data) => {
     .attr('y', MARGINS.top)
     .attr('text-anchor', 'middle')
     .attr('class', 'header')
-    .text('Overview of Spending By Team');
+    .text('Overview of Total Recording Spending By Team');
   FRAME1.append('text')
     .attr('transform', 'translate(' + MARGINS.left + ')')
     .attr('x', MARGINS.left + (VIS_WIDTH/2))
@@ -91,7 +91,7 @@ totals_data.then((data) => {
     .enter()
       .append('rect')
       .attr('x', (d) => {
-        return (xscale(d.Area) + MARGINS.left + 10)
+        return (xscale(d.Area.split(' ')[1]) + MARGINS.left + 10)
       })
       .attr('y', (d) => {
         return (MARGINS.top + (yscale(d.Total)))
