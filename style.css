@@ -39,7 +39,16 @@ ul {
     margin: auto;
     width: 75%;
 }
+
+.vis1 {
+    width: 50%;
+}
+
 .subgroupVis {
+    width: 50%;
+}
+
+.timeVis {
     width: 50%;
 }
 
@@ -62,21 +71,33 @@ ul {
   }
 
 .Airframe {
-    fill:rgb(43, 150, 244)
+    fill:rgb(43, 150, 244);
 }
 
 .Avionics {
-    fill:rgb(111, 2, 144)
+    fill:rgb(111, 2, 144);
 }
 
 .Internal {
-    fill:rgb(219, 26, 94)
+    fill:rgb(219, 26, 94);
 }
 
 .Propulsion {
-    fill:rgb(6, 132, 88)
+    fill:rgb(6, 132, 88);
 }
 
 .Starship {
-    fill:rgb(238, 157, 6)
+    fill:rgb(238, 157, 6);
+}
+
+.Travel {
+    fill:rgb(247, 97, 4);
+}
+
+.propPoint {
+    fill:rgb(60, 111, 187);
+}
+
+.recPoint {
+    fill:rgb(118, 176, 154);
 }

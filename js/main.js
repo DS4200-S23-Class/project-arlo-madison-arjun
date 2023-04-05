@@ -1,7 +1,7 @@
 // define constant frame dimensions
-const FRAME_HEIGHT = 500;
-const FRAME_WIDTH = 650;
-const MARGINS = {left: 60, right: 25, top: 30, bottom: 100};
+const FRAME_HEIGHT = 550;
+const FRAME_WIDTH = 700;
+const MARGINS = {left: 60, right: 45, top: 30, bottom: 100};
 const VIS_HEIGHT = FRAME_HEIGHT - MARGINS.top - MARGINS.bottom;
 const VIS_WIDTH = FRAME_WIDTH - MARGINS.left - MARGINS.right;
 
@@ -9,9 +9,10 @@ const VIS_WIDTH = FRAME_WIDTH - MARGINS.left - MARGINS.right;
 const launch_data = d3.csv('Data/launch.csv');
 const recorded_data = d3.csv('Data/recorded.csv');
 const proposed_data = d3.csv('Data/proposed.csv');
+const totals_data = d3.csv('Data/totals.csv');
 
 // create spending overviews
-recorded_data.then((data) => {
+totals_data.then((data) => {
 
   // create first frame
   const FRAME1 = d3.select('.vis1')
@@ -21,26 +22,21 @@ recorded_data.then((data) => {
                 .attr('class', 'frame')
                 .attr('viewBox', [MARGINS.left, MARGINS.bottom, VIS_WIDTH, VIS_HEIGHT]);
 
-  // get subgroup heights !!!!!!!!!!!!!!!!!!!!!!!!
-  let subgroupTotals = {'Airframe': 0, 'Avionics': 0, 'Internal Mech': 0, 'Propulsion': 0, 'Starship': 0, 'Travel': 0};
-
-  for (let i = 0; i < data.length; i++) {
-    let cost = parseFloat(data[i].Cost)
-    let subgroup = data[i].Subgroup
-    if ( isNaN(cost) == false ) { 
-      subgroupTotals[subgroup] += cost 
-  }};
-
-  console.log(subgroupTotals)
-
   // set max values for scaling
   let MAX_Y = 4000
 
+  // get subgroup specific data
+  let recordedTotals = []
+  for (let i = 0; i < data.length; i++) {
+    if ( data[i].Area[0] == 'R' && data[i].Area.slice(-1) != 'I' && data[i].Area.slice(-1) != '3') { 
+      recordedTotals.push(data[i]) 
+  }};
+
   // create scaling functions
   let xscale = d3.scaleBand()
-    .domain(data.map((d) =>
-      {return d.Subgroup;}))
-		.range([0, VIS_WIDTH])
+    .domain(recordedTotals.map((d) =>
+      {return d.Area;}))
+		.range([0, VIS_WIDTH - 19])
 		.padding(0.4);
   let yscale = d3.scaleLinear()
     .domain([(MAX_Y + 300), 0])
@@ -52,7 +48,7 @@ recorded_data.then((data) => {
 	g.append('g')
     .attr('transform', 'translate(' + MARGINS.left + ',' + (MARGINS.top + VIS_HEIGHT) +')')
     .call(d3.axisBottom(xscale))
-    .attr('font-size', '10px')
+    .attr('font-size', '11px')
     .selectAll('text')	
       .style('text-anchor', 'end')
       .attr('dx', '-.8em')
@@ -69,21 +65,21 @@ recorded_data.then((data) => {
   FRAME1.append('text')
     .attr('transform', 'translate(' + MARGINS.left + ')')
     .attr('x', VIS_WIDTH/2)
-    .attr('y', MARGINS.top / 2)
+    .attr('y', MARGINS.top)
     .attr('text-anchor', 'middle')
     .attr('class', 'header')
     .text('Overview of Spending');
   FRAME1.append('text')
     .attr('transform', 'translate(' + MARGINS.left + ')')
     .attr('x', MARGINS.left + (VIS_WIDTH/2))
-    .attr('y', MARGINS.top + VIS_HEIGHT + MARGINS.bottom - 15)
+    .attr('y', MARGINS.top + VIS_HEIGHT + MARGINS.bottom + 15)
     .attr('text-anchor', 'middle')
     .attr('class', 'header')
     .text('Redshift Subgroup');
   FRAME1.append('text')
     .attr('transform', 'translate(' + (MARGINS.left - 8) + ')')
     .attr('x', 5)
-    .attr('y', MARGINS.top + VIS_HEIGHT/2)
+    .attr('y', MARGINS.top + VIS_HEIGHT/2 + 20)
     .attr('text-anchor', 'middle')
     .attr('class', 'header')
     .attr('font-size', '13px')
@@ -91,72 +87,189 @@ recorded_data.then((data) => {
  
   // add bars
   g.selectAll('bars')
-        .data(subgroupTotals)
-        .enter()
-    .append('rect')
-    .attr('x', (d) => {
-      return (xscale(d) + MARGINS.left)
-    })
-    .attr('y', (d) => {
-      return (MARGINS.top + (yscale(subgroupTotals[d])))
-    })
-    .attr('height', (d) => {
-      return (VIS_HEIGHT - yscale(subgroupTotals[d]))
-    })
-    .attr('width', '10px')
-    .attr('class', 'subgroupBar' + d);
+    .data(recordedTotals)
+    .enter()
+      .append('rect')
+      .attr('x', (d) => {
+        return (xscale(d.Area) + MARGINS.left + 10)
+      })
+      .attr('y', (d) => {
+        return (MARGINS.top + (yscale(d.Total)))
+      })
+      .attr('height', (d) => {
+        return (VIS_HEIGHT - yscale(d.Total))
+      })
+      .attr('width', '30px')
+      .attr('class', (d) => {
+        return ('vis1Bar ' + d.Area + ' ' + d.Area + 'Bar')
+      });
 
   // initialize tooltip
-  const TOOLTIP = d3.select('.subgroupVis')
+  const TOOLTIP1 = d3.select('.vis1')
   .append('div')
     .attr('class', 'tooltip')
     .style('opacity', 0);
 
   // create general barchart event handler functions
   function handleMouseover(event, d) {
-    TOOLTIP.style('opacity', 1);
+    TOOLTIP1.style('opacity', 1);
     d3.select(this)
       .style('stroke', 'black')
       .style('stroke-width', '2px');
   };
   function handleMousemove(event, d) {  
-    TOOLTIP.html('Item: ' + d.Item + '<br>Semester: ' + d.Semester + '<br>Price: ' + d.Price + '<br>Quantity: ' + d.Quantity + '<br>Total Cost: ' + d.Cost + '<br>Importance: ' + d.Importance + '<br>Vendor: ' + d.Vendor + '<br>Description: ' + d.Description)
+    TOOLTIP1.html(d.Area + '<br>Total Recorded Purchases: $' + d.Total + '<br>Click for Itemized Breakdown!')
       .style('left', (event.pageX + 20) + 'px')
       .style('top', (event.pageY + 20) + 'px'); 
   };
-    function handleMouseleave(event, d) {  
-      TOOLTIP.style('opacity', 0);
-      d3.select(this)
-      .style('stroke-width', '0px');     
-    };
-  g.selectAll('.subgroupBar')
+  function handleMouseleave(event, d) {  
+    TOOLTIP1.style('opacity', 0);
+    d3.select(this)
+    .style('stroke-width', '0px');     
+  };
+  function handleClick(event, d) {
+    let subgroup = d.Area.split(' ')[1];
+    buildSubgroupVis(subgroup);
+  };
+  g.selectAll('.vis1Bar')
       .on('mouseover', handleMouseover)
       .on('mousemove', handleMousemove)
-      .on('mouseleave', handleMouseleave); 
-});
+      .on('mouseleave', handleMouseleave)
+      .on('click', handleClick); 
+  
+  //build time visualization
+  const TIMEVIS = d3.select('.timeVis')
+    .append('svg')
+    .attr('height', FRAME_HEIGHT)
+    .attr('width', FRAME_HEIGHT)
+    .attr('class', 'frame')
+    .attr('viewBox', [MARGINS.left, MARGINS.bottom, VIS_WIDTH, VIS_HEIGHT]);
 
-// only show approtpriately filtered subgroup data
-function CheckSubgroupFilter() {
-  if(document.getElementById('AirframeButton').checked) {
-    buildSubgroupVis('Airframe');
-  }
-  if(document.getElementById('AvionicsButton').checked) {
-    buildSubgroupVis('Avionics');
-  }
-  if(document.getElementById('InternalButton').checked) {
-    buildSubgroupVis('Internal Mech');
-  }
-  if(document.getElementById('PropulsionButton').checked) {
-    buildSubgroupVis('Propulsion');
-  }
-  if(document.getElementById('StarshipButton').checked) {
-    buildSubgroupVis('Starship');
+  // set max values for scaling
+  let TIME_MAX_Y = 13500
+
+  // get subgroup specific data
+  let propTimeTotals = []
+  for (let i = 0; i < data.length; i++) {
+    if ( data[i].Area[0] == 'P' && (data[i].Area.slice(-1) == 'I' || data[i].Area.slice(-1) == '3')) { 
+    propTimeTotals.push(data[i]) 
+  }};
+  // get subgroup specific data
+  let recTimeTotals = []
+  for (let i = 0; i < data.length; i++) {
+    if ( data[i].Area[0] == 'R' && (data[i].Area.slice(-1) == 'I' || data[i].Area.slice(-1) == '3')) { 
+    recTimeTotals.push(data[i]) 
   }};
 
-let subgroupButtons = document.querySelectorAll('input[name="sub"]');
-for (let i = 0; i < subgroupButtons.length; i++) {
-  subgroupButtons[i].addEventListener('change', CheckSubgroupFilter);
-};
+  // create scaling functions
+  let xscaleTime = d3.scaleBand()
+    .domain(propTimeTotals.map((d) =>
+      {return d.Area.split(' ')[1];}))
+    .range([0, VIS_WIDTH - 19])
+    .padding(0.4);
+  let yscaleTime = d3.scaleLinear()
+    .domain([(TIME_MAX_Y), 0])
+    .range([0, VIS_HEIGHT]);
+
+  // create x and y axes
+  let gTime = TIMEVIS.append('g')
+    .attr('transform', 'translate(' + MARGINS.left + ',' + MARGINS.top + ')');
+  gTime.append('g')
+    .attr('transform', 'translate(' + MARGINS.left + ',' + (MARGINS.top + VIS_HEIGHT) +')')
+    .call(d3.axisBottom(xscaleTime))
+    .attr('font-size', '12px')
+    .selectAll('text')	
+    .style('text-anchor', 'end')
+    .attr('dx', '-.8em')
+    .attr('dy', '.15em')
+    .attr('transform', function(d) {
+        return 'rotate(-35)' 
+      });
+  gTime.append('g')
+    .attr('transform', 'translate(' + MARGINS.left + ',' + MARGINS.top +')')
+    .call(d3.axisLeft(yscaleTime))
+    .attr('font-size', '10px');
+
+  // add title and axis labels
+  TIMEVIS.append('text')
+  .attr('transform', 'translate(' + MARGINS.left + ')')
+  .attr('x', VIS_WIDTH/2)
+  .attr('y', MARGINS.top)
+  .attr('text-anchor', 'middle')
+  .attr('class', 'header')
+  .text('Proposed and Recorded Spending Over a Year');
+  TIMEVIS.append('text')
+  .attr('transform', 'translate(' + MARGINS.left + ')')
+  .attr('x', (VIS_WIDTH/2))
+  .attr('y', MARGINS.top + VIS_HEIGHT + MARGINS.bottom)
+  .attr('text-anchor', 'middle')
+  .attr('font-size', '17px')
+  .attr('class', 'header')
+  .text('Semester');
+  TIMEVIS.append('text')
+  .attr('transform', 'translate(' + (MARGINS.left - 8) + ')')
+  .attr('x', 5)
+  .attr('y', MARGINS.top + VIS_HEIGHT/2 + 20)
+  .attr('text-anchor', 'middle')
+  .attr('class', 'header')
+  .attr('font-size', '13px')
+  .text('Total Cost');
+
+  // add points
+  gTime.selectAll('points')
+    .data(propTimeTotals)
+    .enter()
+      .append('circle')
+      .attr('cx', (d) => {
+        return (xscaleTime(d.Area.split(' ')[1]) + MARGINS.left + 10)
+      })
+      .attr('cy', (d) => {
+        return (yscaleTime(d.Total) + MARGINS.top)
+      })
+      .attr('r', 5)
+      .attr('class', 'propPoint point');
+    gTime.selectAll('points')
+      .data(recTimeTotals)
+      .enter()
+        .append('circle')
+        .attr('cx', (d) => {
+          return (xscaleTime(d.Area.split(' ')[1]) + MARGINS.left + 10)
+        })
+        .attr('cy', (d) => {
+          return (yscaleTime(d.Total) + MARGINS.top)
+        })
+        .attr('r', 5)
+        .attr('class', 'recPoint point');
+
+  // initialize tooltip
+  const TOOLTIPTIME = d3.select('.timeVis')
+  .append('div')
+    .attr('class', 'tooltip')
+    .style('opacity', 0);
+
+  // create general barchart event handler functions
+  function handleMouseoverTime(event, d) {
+    TOOLTIPTIME.style('opacity', 1);
+    d3.select(this)
+      .style('stroke', 'black')
+      .style('stroke-width', '1px');
+  };
+  function handleMousemoveTime(event, d) {  
+    TOOLTIPTIME.html(d.Area + '<br>Total Purchases: $' + d.Total)
+      .style('left', (event.pageX + 20) + 'px')
+      .style('top', (event.pageY + 20) + 'px'); 
+  };
+  function handleMouseleaveTime(event, d) {  
+    TOOLTIPTIME.style('opacity', 0);
+    d3.select(this)
+    .style('stroke-width', '0px');     
+  };
+  gTime.selectAll('.point')
+      .on('mouseover', handleMouseoverTime)
+      .on('mousemove', handleMousemoveTime)
+      .on('mouseleave', handleMouseleaveTime); 
+  
+});
 
 // create subgroup frame
 const SUBGROUPFRAME = d3.select('.subgroupVis')
@@ -167,11 +280,22 @@ const SUBGROUPFRAME = d3.select('.subgroupVis')
 
 function buildSubgroupVis(subgroupName) {
   proposed_data.then((data) => {
-    
+
     // remove previous visualization
     SUBGROUPFRAME.selectAll('*').remove()
     let g = SUBGROUPFRAME.append('g')
       .attr('transform', 'translate(' + MARGINS.left + ',' + MARGINS.top + ')');
+    
+    if (subgroupName == 'Travel') {
+      SUBGROUPFRAME.append("text")
+        .attr('transform', 'translate(' + MARGINS.left + ')')
+        .attr('x', VIS_WIDTH/2)
+        .attr('y', MARGINS.top + VIS_HEIGHT/2)
+        .attr('text-anchor', 'middle')
+        .attr('class', 'header')
+        .text('Travel expesnes are not proposed-they are calculated at the end of the semester.');
+      return 0
+    };
 
     // get subgroup specific data
     let subgroupData = []
@@ -185,11 +309,11 @@ function buildSubgroupVis(subgroupName) {
     let xscale = d3.scaleBand()
       .domain(subgroupData.map((d) =>
       {return d.Item;}))
-      .range([0, VIS_WIDTH]);
+      .range([0, VIS_WIDTH - 20]);
     g.append('g')
       .attr('transform', 'translate(' + MARGINS.left + ',' + (MARGINS.top + VIS_HEIGHT) +')')
       .call(d3.axisBottom(xscale))
-      .attr('font-size', '10px')
+      .attr('font-size', '8px')
       .selectAll('text')	
               .style('text-anchor', 'end')
               .attr('dx', '-.8em')
@@ -228,7 +352,7 @@ function buildSubgroupVis(subgroupName) {
         .style('fill', 'yellow');
     };
     function handleMousemove(event, d) {  
-      TOOLTIP.html('Item: ' + d.Item + '<br>Semester: ' + d.Semester + '<br>Price: ' + d.Price + '<br>Quantity: ' + d.Quantity + '<br>Total Cost: ' + d.Cost + '<br>Importance: ' + d.Importance + '<br>Vendor: ' + d.Vendor + '<br>Description: ' + d.Description)
+      TOOLTIP.html('Item: ' + d.Item + '<br>Semester: ' + d.Semester + '<br>Price: $' + d.Price + '<br>Quantity: ' + d.Quantity + '<br>Total Cost: $' + d.Cost + '<br>Importance: ' + d.Importance + '<br>Vendor: ' + d.Vendor + '<br>Description: ' + d.Description)
         .style('left', (event.pageX + 20) + 'px')
         .style('top', (event.pageY + 20) + 'px'); 
     };
@@ -251,7 +375,7 @@ function buildSubgroupVis(subgroupName) {
         .enter()
           .append('rect')
           .attr('x', (d) => {
-            return (xscale(d.Item) + MARGINS.left)
+            return (xscale(d.Item) + MARGINS.left + 8)
           })
           .attr('y', (d) => {
             return (MARGINS.top + (yscale(d.Price)))
@@ -259,7 +383,7 @@ function buildSubgroupVis(subgroupName) {
           .attr('height', (d) => {
             return (VIS_HEIGHT - yscale(d.Price))
           })
-          .attr('width', '10px')
+          .attr('width', '13px')
           .attr('class', subgroupName);
       // add event listeners to bars
       function handleMouseleave(event, d) {  
@@ -288,7 +412,7 @@ function buildSubgroupVis(subgroupName) {
       .enter()
         .append('rect')
         .attr('x', (d) => {
-          return (xscale(d.Item) + MARGINS.left)
+          return (xscale(d.Item) + MARGINS.left + 5)
         })
         .attr('y', (d) => {
           return (MARGINS.top + (yscale(d.Price)))
@@ -296,7 +420,7 @@ function buildSubgroupVis(subgroupName) {
         .attr('height', (d) => {
           return (VIS_HEIGHT - yscale(d.Price))
         })
-        .attr('width', '10px')
+        .attr('width', '12px')
         .attr('class', subgroupName);
     // add event listeners to bars
     function handleMouseleave(event, d) {  
@@ -308,7 +432,46 @@ function buildSubgroupVis(subgroupName) {
       .on('mouseover', handleMouseover)
       .on('mousemove', handleMousemove)
       .on('mouseleave', handleMouseleave); 
-    } else if(subgroupName == 'Internal Mech') {
+    } else if(subgroupName == 'Internal') {
+      let subgroupData = []
+      for (let i = 0; i < data.length; i++) {
+        let subgroup = data[i].Subgroup
+        if ( subgroup == 'Internal Mech' ) { 
+          subgroupData.push(data[i]) 
+      }};
+      // x scaling function and axis
+      let xscale = d3.scaleBand()
+      .domain(subgroupData.map((d) =>
+      {return d.Item;}))
+      .range([0, VIS_WIDTH - 10]);
+      g.append('g')
+        .attr('transform', 'translate(' + MARGINS.left + ',' + (MARGINS.top + VIS_HEIGHT) +')')
+        .call(d3.axisBottom(xscale))
+        .attr('font-size', '10px')
+        .selectAll('text')	
+                .style('text-anchor', 'end')
+                .attr('dx', '-.8em')
+                .attr('dy', '.15em')
+                .attr('transform', function(d) {
+                    return 'rotate(-35)' 
+                    });
+
+      // add title and axis labels
+      SUBGROUPFRAME.append('text')
+        .attr('transform', 'translate(' + MARGINS.left + ')')
+        .attr('x', MARGINS.left + VIS_WIDTH/2)
+        .attr('y', MARGINS.top / 2)
+        .attr('text-anchor', 'middle')
+        .attr('class', 'header')
+        .text('Proposed Purchases: ' + subgroupName + ' Team');
+      SUBGROUPFRAME.append('text')
+        .attr('transform', 'translate(' + (MARGINS.left - 8) + ')')
+        .attr('x', 0)
+        .attr('y', MARGINS.top + VIS_HEIGHT/2)
+        .attr('text-anchor', 'middle')
+        .attr('class', 'header')
+        .attr('font-size', '13px')
+        .text('Item Cost');
       let subgroupColor = 'rgb(219, 26, 94)';
       let subgroupMaxY = 715;
       // y scaling function and axis specific to subgroup
@@ -325,7 +488,7 @@ function buildSubgroupVis(subgroupName) {
       .enter()
         .append('rect')
         .attr('x', (d) => {
-          return (xscale(d.Item) + MARGINS.left)
+          return (xscale(d.Item) + MARGINS.left + 2)
         })
         .attr('y', (d) => {
           return (MARGINS.top + (yscale(d.Price)))
@@ -362,7 +525,7 @@ function buildSubgroupVis(subgroupName) {
       .enter()
         .append('rect')
         .attr('x', (d) => {
-          return (xscale(d.Item) + MARGINS.left)
+          return (xscale(d.Item) + MARGINS.left + 1)
         })
         .attr('y', (d) => {
           return (MARGINS.top + (yscale(d.Price)))
@@ -370,7 +533,7 @@ function buildSubgroupVis(subgroupName) {
         .attr('height', (d) => {
           return (VIS_HEIGHT - yscale(d.Price))
         })
-        .attr('width', '10px')
+        .attr('width', '7px')
         .attr('class', subgroupName);
     // add event listeners to bars
     function handleMouseleave(event, d) {  
@@ -399,7 +562,7 @@ function buildSubgroupVis(subgroupName) {
       .enter()
         .append('rect')
         .attr('x', (d) => {
-          return (xscale(d.Item) + MARGINS.left)
+          return (xscale(d.Item) + MARGINS.left + 26)
         })
         .attr('y', (d) => {
           return (MARGINS.top + (yscale(d.Price)))
@@ -407,7 +570,7 @@ function buildSubgroupVis(subgroupName) {
         .attr('height', (d) => {
           return (VIS_HEIGHT - yscale(d.Price))
         })
-        .attr('width', '10px')
+        .attr('width', '25px')
         .attr('class', subgroupName);
     // add event listeners to bars
     function handleMouseleave(event, d) {  
@@ -443,7 +606,7 @@ launch_data.then((data) => {
   let xscale = d3.scaleBand()
     .domain(data.map((d) =>
       {return d.Launch_Date;}))
-	.range([0, VIS_WIDTH])
+	.range([0, VIS_WIDTH - 5])
 	.padding(0.4);
 
   let yscale = d3.scaleLinear()
@@ -457,7 +620,14 @@ launch_data.then((data) => {
 	g.append('g')
     .attr('transform', 'translate(' + MARGINS.left + ',' + (MARGINS.top + VIS_HEIGHT) +')')
     .call(d3.axisBottom(xscale))
-    .attr('font-size', '10px');
+    .attr('font-size', '11px')
+    .selectAll('text')	
+    .style('text-anchor', 'end')
+    .attr('dx', '-.8em')
+    .attr('dy', '.15em')
+    .attr('transform', function(d) {
+        return 'rotate(-35)' 
+        });;
 
   g.append('g')
     .attr('transform', 'translate(' + MARGINS.left + ',' + MARGINS.top +')')
@@ -476,7 +646,7 @@ launch_data.then((data) => {
     FRAME4.append('text')
     .attr('transform', 'translate(' + MARGINS.left + ')')
     .attr('x', MARGINS.left + VIS_WIDTH/2)
-    .attr('y', MARGINS.top + VIS_HEIGHT + 60)
+    .attr('y', MARGINS.top + VIS_HEIGHT + 85)
     .attr('text-anchor', 'middle')
     .attr('class', 'header')
     .attr('font-size', '13px')
@@ -522,7 +692,7 @@ launch_data.then((data) => {
     }
 
   function handleMousemove(event, d) {  
-    TOOLTIP.html('Item: ' + d.Item + '<br>Launch Date: ' + d.Launch_Date + '<br>Amount Broken: ' + d.Number_Broken + '<br>Total Cost: ' + d.Cost)
+    TOOLTIP.html('Item: ' + d.Item + '<br>Launch Date: ' + d.Launch_Date + '<br>Amount Broken: ' + d.Number_Broken + '<br>Total Cost: $' + d.Cost)
       .style('left', (event.pageX + 20) + 'px')
       .style('top', (event.pageY + 20) + 'px'); 
   }
