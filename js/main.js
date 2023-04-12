@@ -1,5 +1,5 @@
 // define constant frame dimensions
-const FRAME_HEIGHT = 550;
+const FRAME_HEIGHT = 500;
 const FRAME_WIDTH = 700;
 const MARGINS = {left: 60, right: 45, top: 30, bottom: 85};
 const VIS_HEIGHT = FRAME_HEIGHT - MARGINS.top - MARGINS.bottom;
@@ -77,6 +77,13 @@ totals_data.then((data) => {
     .attr('class', 'header')
     .text('Redshift Subgroup');
   FRAME1.append('text')
+    .attr('transform', 'translate(' + MARGINS.left + ')')
+    .attr('x', MARGINS.left + (VIS_WIDTH/2))
+    .attr('y', MARGINS.top + VIS_HEIGHT + MARGINS.bottom + 35)
+    .attr('text-anchor', 'middle')
+    .attr('class', 'header')
+    .text('Click a Bar Above for an Itemized Breakdown!');
+  FRAME1.append('text')
     .attr('transform', 'translate(' + (MARGINS.left - 8) + ')')
     .attr('x', 5)
     .attr('y', MARGINS.top + VIS_HEIGHT/2 + 20)
@@ -116,6 +123,11 @@ totals_data.then((data) => {
     d3.select(this)
       .style('stroke', 'black')
       .style('stroke-width', '2px');
+    let current_class = "." + d.Area.split(' ')[1];
+    d3.selectAll(current_class)
+      .style('stroke', 'black')
+      .style('stroke-width', '2px')
+      .attr('r', '8px');
   };
   function handleMousemove(event, d) {  
     TOOLTIP1.html(d.Area + '<br>Total Recorded Purchases: $' + d.Total + '<br>Click for Itemized Breakdown!')
@@ -125,7 +137,11 @@ totals_data.then((data) => {
   function handleMouseleave(event, d) {  
     TOOLTIP1.style('opacity', 0);
     d3.select(this)
-    .style('stroke-width', '0px');     
+    .style('stroke-width', '0px');  
+    let current_class = "." + d.Area.split(' ')[1];
+    d3.selectAll(current_class)
+      .style('stroke-width', '0px')
+      .attr('r', '5px');   
   };
   function handleClick(event, d) {
     let subgroup = d.Area.split(' ')[1];
@@ -257,7 +273,7 @@ totals_data.then((data) => {
     .enter()
       .append('circle')
       .attr('cx', (d) => {
-        return (xscaleTime(d.Area.split(' ')[1]) + MARGINS.left + 10)
+        return (xscaleTime(d.Area.split(' ')[1]) + MARGINS.left + 40)
       })
       .attr('cy', (d) => {
         return (yscaleTime(d.Total) + MARGINS.top)
@@ -269,7 +285,7 @@ totals_data.then((data) => {
       .enter()
         .append('circle')
         .attr('cx', (d) => {
-          return (xscaleTime(d.Area.split(' ')[1]) + MARGINS.left + 10)
+          return (xscaleTime(d.Area.split(' ')[1]) + MARGINS.left + 40)
         })
         .attr('cy', (d) => {
           return (yscaleTime(d.Total) + MARGINS.top)
@@ -284,7 +300,7 @@ totals_data.then((data) => {
     .attr("stroke", "rgb(60, 111, 187)")
     .attr("stroke-width", 3)
     .attr("d", d3.line()
-      .x(function(d) { return xscaleTime(d.Area.split(' ')[1]) + MARGINS.left + 10})
+      .x(function(d) { return xscaleTime(d.Area.split(' ')[1]) + MARGINS.left + 40})
       .y(function(d) { return yscaleTime(d.Total) + MARGINS.top})
       )
   gTime.append("path")
@@ -293,9 +309,33 @@ totals_data.then((data) => {
     .attr("stroke", "rgb(118, 176, 154)")
     .attr("stroke-width", 3)
     .attr("d", d3.line()
-      .x(function(d) { return xscaleTime(d.Area.split(' ')[1]) + MARGINS.left + 10})
+      .x(function(d) { return xscaleTime(d.Area.split(' ')[1]) + MARGINS.left + 40})
       .y(function(d) { return yscaleTime(d.Total) + MARGINS.top})
       )
+
+    // get subgroup specific data
+    let subgroupTimeTotals = []
+    for (let i = 0; i < data.length; i++) {
+      if (data[i].Area[7] != 'd') { 
+      subgroupTimeTotals.push(data[i]) 
+    }};
+    // add subgroup points
+    gTime.selectAll('subgroupPoints')
+    .data(subgroupTimeTotals)
+    .enter()
+      .append('circle')
+      .attr('cx', (d) => {
+        if (d.Area[0] == 'I') { 
+          return (xscaleTime(d.Area.split(' ')[2]) + MARGINS.left + 40) 
+        } else {return (xscaleTime(d.Area.split(' ')[1]) + MARGINS.left + 40)};
+      })
+      .attr('cy', (d) => {
+        return (yscaleTime(d.Total) + MARGINS.top)
+      })
+      .attr('r', 5)
+      .attr('class', (d) => {
+        return d.Area + " subPoint"
+      });
 
   // initialize tooltip
   const TOOLTIPTIME = d3.select('.timeVis')
@@ -324,6 +364,43 @@ totals_data.then((data) => {
       .on('mouseover', handleMouseoverTime)
       .on('mousemove', handleMousemoveTime)
       .on('mouseleave', handleMouseleaveTime); 
+
+    // subgroup semester functions
+    const TOOLTIPSUB = d3.select('.vis1')
+    .append('div')
+      .attr('class', 'tooltip')
+      .style('opacity', 0);
+  
+    // create general barchart event handler functions
+    function handleMouseoverSub(event, d) {
+      TOOLTIPSUB.style('opacity', 1);
+      d3.select(this)
+        .style('stroke', 'black')
+        .style('stroke-width', '2px');
+      let current_class = "." + d.Area.split(' ')[0];
+      d3.selectAll(current_class)
+        .style('stroke', 'black')
+        .style('stroke-width', '2px')
+        .attr('r', '8px');
+    };
+    function handleMousemoveSub(event, d) {  
+      TOOLTIPSUB.html(d.Area + '<br>Total Recorded Purchases: $' + d.Total)
+        .style('left', (event.pageX + 20) + 'px')
+        .style('top', (event.pageY + 20) + 'px'); 
+    };
+    function handleMouseleaveSub(event, d) {  
+      TOOLTIPSUB.style('opacity', 0);
+      d3.select(this)
+        .style('stroke-width', '0px');  
+      let current_class = "." + d.Area.split(' ')[0];
+      d3.selectAll(current_class)
+        .style('stroke-width', '0px')
+        .attr('r', '5px');   
+    };
+    gTime.selectAll('.subPoint')
+        .on('mouseover', handleMouseoverSub)
+        .on('mousemove', handleMousemoveSub)
+        .on('mouseleave', handleMouseleaveSub);
   
 });
 
@@ -686,7 +763,7 @@ launch_data.then((data) => {
   FRAME4.append('text')
     .attr('transform', 'translate(' + MARGINS.left + ')')
     .attr('x', MARGINS.left + VIS_WIDTH/2)
-    .attr('y', MARGINS.top / 2)
+    .attr('y', MARGINS.top / 2 + 15)
     .attr('text-anchor', 'middle')
     .attr('class', 'header')
     .attr('font-size', '20px')
@@ -700,7 +777,22 @@ launch_data.then((data) => {
     .attr('class', 'header')
     .attr('font-size', '16px')
     .text('Launch Date');
-
+    FRAME4.append('text')
+    .attr('transform', 'translate(' + MARGINS.left + ')')
+    .attr('x', MARGINS.left + VIS_WIDTH/2)
+    .attr('y', MARGINS.top / 2 - 25)
+    .attr('text-anchor', 'middle')
+    .attr('class', 'header')
+    .attr('font-size', '18px')
+    .text('Things happen! Things break during launches!');
+    FRAME4.append('text')
+    .attr('transform', 'translate(' + MARGINS.left + ')')
+    .attr('x', MARGINS.left + VIS_WIDTH/2)
+    .attr('y', MARGINS.top / 2 - 5)
+    .attr('text-anchor', 'middle')
+    .attr('class', 'header')
+    .attr('font-size', '18px')
+    .text('Take a look below at these unexpected expenses from past launches.');
     FRAME4.append('text')
     .attr('transform', 'translate(' + MARGINS.left + ')')
     .attr('x', 0)
