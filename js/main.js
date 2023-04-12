@@ -78,11 +78,11 @@ totals_data.then((data) => {
     .text('Redshift Subgroup');
   FRAME1.append('text')
     .attr('transform', 'translate(' + MARGINS.left + ')')
-    .attr('x', MARGINS.left + (VIS_WIDTH/2))
+    .attr('x', MARGINS.left + (VIS_WIDTH/2) - 30)
     .attr('y', MARGINS.top + VIS_HEIGHT + MARGINS.bottom + 35)
     .attr('text-anchor', 'middle')
     .attr('class', 'header')
-    .text('Click a Bar Above for an Itemized Breakdown!');
+    .text('Click a Bar for an Itemized Breakdown of what the Team WANTED to buy!');
   FRAME1.append('text')
     .attr('transform', 'translate(' + (MARGINS.left - 8) + ')')
     .attr('x', 5)
