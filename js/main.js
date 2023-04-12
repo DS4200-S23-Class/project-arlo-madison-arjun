@@ -151,7 +151,7 @@ totals_data.then((data) => {
   // get subgroup specific data
   let propTimeTotals = []
   for (let i = 0; i < data.length; i++) {
-    if ( data[i].Area[0] == 'P' && (data[i].Area.slice(-1) == 'I' || data[i].Area.slice(-1) == '3')) { 
+    if ( data[i].Area[0] == 'P'  && data[i].Area[7] == 'd' && (data[i].Area.slice(-1) == 'I' || data[i].Area.slice(-1) == '3')) { 
     propTimeTotals.push(data[i]) 
   }};
   // get subgroup specific data
