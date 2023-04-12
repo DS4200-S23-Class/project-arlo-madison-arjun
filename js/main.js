@@ -520,14 +520,6 @@ function buildSubgroupVis(subgroupName) {
         .attr('text-anchor', 'middle')
         .attr('class', 'header')
         .text('Proposed Purchases: ' + subgroupName + ' Team');
-      SUBGROUPFRAME.append('text')
-        .attr('transform', 'translate(' + (MARGINS.left - 8) + ')')
-        .attr('x', 0)
-        .attr('y', MARGINS.top + VIS_HEIGHT/2)
-        .attr('text-anchor', 'middle')
-        .attr('class', 'header')
-        .attr('font-size', '13px')
-        .text('Item Cost');
       let subgroupColor = 'rgb(219, 26, 94)';
       let subgroupMaxY = 715;
       // y scaling function and axis specific to subgroup
