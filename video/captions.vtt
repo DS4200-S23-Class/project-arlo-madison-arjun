@@ -1,0 +1,163 @@
+0:00:02.820,0:00:11.460
+For our DS4200 project Madison, Arlo, and 
+I, Arjun, decided to create a budgeting
+
+0:00:11.460,0:00:17.820
+dashboard to help the NEU Aerospace Club record, 
+understand, and plan their budgets and spending.
+
+0:00:18.360,0:00:23.040
+We wanted to achieve this by creating 
+multi-level visualizations of expenditures
+
+0:00:23.040,0:00:28.380
+that will aid budget exploration for 
+board members by allowing them to see
+
+0:00:28.380,0:00:33.360
+budgeting trends, analyze damages, 
+and inform future decision-making.
+
+0:00:39.000,0:00:45.060
+This is the view of our webpage it 
+contains the motivation behind our projectc
+
+0:00:46.380,0:00:53.760
+the data with the data set linked over 
+here um and it explains biases in the data
+
+0:00:55.080,0:01:01.920
+um if you scroll down you will go to a you'll 
+reach our first visualization that shows the cost
+
+0:01:02.820,0:01:09.240
+um over the cumulative cost for all 
+the different subgroups within redshift
+
+0:01:10.500,0:01:16.620
+um over the course of all the semester semesters 
+uh I have as you can see the different colors
+
+0:01:16.620,0:01:23.760
+denote the different subgroups and the size of 
+and the area of the bars show the total cost
+
+0:01:23.760,0:01:31.500
+accumulated when you hover over the each bar 
+it shows you the subgroup the total recorded
+
+0:01:31.500,0:01:35.880
+put and the total recorded purchases and you 
+can see these for all the different subgroups
+
+0:01:37.080,0:01:45.000
+um board members can get a a more deeper view by 
+clicking on a particular bar which will bring up
+
+0:01:45.000,0:01:51.240
+our second visualization this shows the itemized 
+breakdown of all the costs accumulated for each
+
+0:01:51.240,0:01:57.660
+subgroup for uh over the semester so as you can 
+see when I hover over the bar here it tells me
+
+0:01:57.660,0:02:03.240
+which item it was when it when it was purchased 
+what the price was the quantity and the total
+
+0:02:03.240,0:02:10.680
+cost importance and vendor and this can be seen 
+for all the different items that we purchased
+
+0:02:10.680,0:02:19.140
+you can get the same information for avionics 
+and you can hover over the bars and see the
+
+0:02:19.140,0:02:27.180
+same tool tips again here the the area of the 
+bars denotes the total cost of each item um
+
+0:02:29.340,0:02:37.140
+um our second our third visualization shows um 
+the two line charts or that are again the two
+
+0:02:37.140,0:02:42.120
+different colors denote what the proposed 
+and the recorded uh budget spending was
+
+0:02:43.380,0:02:48.120
+um as you can see there's a legend here that 
+shows that the blue didn't is linked to the
+
+0:02:48.120,0:02:54.960
+proposed uh spending and the green is the actual 
+recorded spending again the lines and the points
+
+0:02:54.960,0:03:03.120
+are are marks and you can hover over each point 
+to see what was recorded when it was recorded and
+
+0:03:03.120,0:03:10.140
+what the total purchases were over here you can 
+also see you can hover over these points to see
+
+0:03:10.140,0:03:15.660
+which particular subgroup was in which position 
+for in terms of the total purchases and these are
+
+0:03:15.660,0:03:23.580
+linked to the bar charts here so as I hover over 
+the internal Mac points here you can see it being
+
+0:03:23.580,0:03:30.480
+highlighted over here and as I go into propulsion 
+all the propulsion points are highlighted in the
+
+0:03:30.480,0:03:36.780
+graph below so this visualization also allows 
+us to see the positions of the spending so for
+
+0:03:36.780,0:03:43.560
+example propulsion was pretty high up in summer 
+one but it reduced over the following semesters
+
+0:03:44.340,0:03:50.100
+um in summer too and fall so this way the 
+board members can plan out their budget
+
+0:03:50.700,0:04:01.860
+um accordingly um our third visualization shows 
+um records when items were broken again here you
+
+0:04:01.860,0:04:08.460
+have as you have a tool tip up over each marker 
+a tooltip appears that shows what the item was
+
+0:04:08.460,0:04:15.000
+the launch date and the amount broken and the cost 
+for the amount and again you have marks over here
+
+0:04:15.000,0:04:21.960
+uh you have points and you can use the X and Y 
+position to to understand what the total cost
+
+0:04:21.960,0:04:29.280
+was and when it was incurred this also gives board 
+members an idea into when most of these uh access
+
+0:04:29.280,0:04:34.800
+damages were happening as you can see there were 
+relatively few damages in the beginning of the
+
+0:04:34.800,0:04:45.300
+semester but more towards the end so this can 
+help them um prepare for the future as well as
+
+0:04:46.320,0:04:52.020
+um conduct any analyzes within the group 
+to see why these damages were happening
+
+0:04:52.560,0:04:57.600
+and lastly we have our acknowledgments 
+and this is our the demo of our page
